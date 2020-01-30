@@ -1,5 +1,22 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap');*/
+
+:root {
+    --primary-color: #2b4162;
+    --subprimary-color: #040303;
+    --secondary-color: #beb0a7;
+    --accent1-color: #8b9d83;
+    --accent2-color: #6a7b76;
+    /*--heading-font: "Poiret One";
+    --paragraph-font: Quicksand, Helvetica, sans-Serif;*/
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
 body {
-    background-color: yellowgreen;
+    background-color: var(--secondary-color);
     font-size: 18px;
 }
 
@@ -12,32 +29,39 @@ header,
 nav,
 main,
 footer {
-    max-width: 960px; 
+    max-width: 960px;
     margin: 0 auto;
 }
 
 header {
-    background-color: tomato;
-    color: thistle;
-    border: 1px solid gold;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: 1px solid var(--subprimary-color);
     padding: 10px;
 }
 
 header img {
     width: 100px;
     height: auto;
-    border: 2px solid green;
-    box-shadow: 0 0 30px goldenrod;
+    border: 1px solid var(--subprimary-color);
+    box-shadow: 0 0 30px var(--secondary-color);
 }
 
 header h1 {
     font-size: 2.2 rem;
- /*   margin: 0 0 0 60px;
+    /*   margin: 0 0 0 60px;
     display: flex;
     flex-direction: row;
 */
 }
 
+p {
+    background-color: var(--accent1-color);
+}
+
+h2 {
+    color: var(--primary-color);
+}
 /*
 31.31/39.57
 https://byui.instructure.com/courses/83786/assignments/3142889?module_item_id=8643972
