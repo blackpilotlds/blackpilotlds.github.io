@@ -3,11 +3,16 @@ body {
     font-size: 18px;
 }
 
+.page-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 header,
 nav,
 main,
 footer {
-    max-width: 960px;
+    max-width: 960px; 
     margin: 0 auto;
 }
 
@@ -23,10 +28,14 @@ header img {
     height: auto;
     border: 2px solid green;
     box-shadow: 0 0 30px goldenrod;
-} 
+}
 
 header h1 {
     font-size: 2.2 rem;
+ /*   margin: 0 0 0 60px;
+    display: flex;
+    flex-direction: row;
+*/
 }
 
 /*
