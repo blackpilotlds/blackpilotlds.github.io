@@ -56,7 +56,7 @@ header img {
     width: 100px;
     height: auto;
     /*border: 1px solid var(--subprimary-color);*/
-    box-shadow: 0 0 30px var(--secondary-color);
+    box-shadow: 0 0 30px orange;
 }
 
 header h1 {
