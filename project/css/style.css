@@ -6,11 +6,11 @@
 /*@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap');*/
 
 :root {
-    --primary-color: #2b4162;
-    --subprimary-color: silver;
-    --secondary-color: #beb0a7;
-    --accent1-color: #8b9d83;
-    --accent2-color: #6a7b76;
+    --first: #6B6E59;
+    --second: #5E8E71;
+    --third: #183207;
+    --fourth: #4D230F;
+    --final: #E2B77C;
     /*--heading-font: "Poiret One";
     --paragraph-font: Quicksand, Helvetica, sans-Serif;*/
 }
@@ -27,15 +27,15 @@ nav>ul {
 }
 
 li a {
-    display: box;
-    color: var(--primary-color);
+    display: block;
+    color: var(--first);
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: gold;
+    background-color: var(--final);
 }
 
 /*
@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 */
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--first);
     font-size: 18px;
 }
 
@@ -59,13 +59,13 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto;
-    background-color: var(--accent2-color);
+    background-color: var(--first);
 }
 
 header {
-    background-color: var(--accent1-color);
-    color: var(--subprimary-color);
-    /*<!--border: 1px solid var(--subprimary-color);*/
+    background-color: var(--third);
+    color: var(--final);
+    border: 1px solid var(--fourth);
     padding: 10px;
 }
 
@@ -73,18 +73,31 @@ header img {
     width: 100px;
     height: auto;
     margin: 0 0 0 0;
-    /*border: 1px solid var(--subprimary-color);*/
+    border: 1px solid var(--final);
     box-shadow: 0 0 30px black;
 }
 
 header h1 {
-    font-size: 2.2 rem;
-    margin: 0 0 0 0;;/*
+    font-size: 2.2em;
+    margin: 0 0 0 0;
     display: flex;
-    flex-direction: row;*/
+    flex-direction: row;
 }
 
-#firstmain {
+.bodyimage {
     width: 300px;
     height: auto;
 }
+
+/*
+-----------------------------------------------------------------------------------------------
+-- -NOTES-
+-----------------------------------------------------------------------------------------------
+Colors for img relax:
+FIRST--Grey #6B6E59
+    Black #060907
+SECOND--Light green #5E8E71
+THIRD--Green #183207
+FOURTH--orange #4D230F
+FINAL--brown #E2B77C
+*/
