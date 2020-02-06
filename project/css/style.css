@@ -4,7 +4,7 @@
 Займись тем чтобы везде обозначить Margin, Border, Padding и Content
 -----------------------------------------------------------------------------------------------
 */
-/*@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap');
 
 :root {
     --first: #6B6E59;
@@ -12,8 +12,8 @@
     --third: #183207;
     --fourth: #4D230F;
     --final: #E2B77C;
-    /*--heading-font: "Poiret One";
-    --paragraph-font: Quicksand, Helvetica, sans-Serif;*/
+    --heading-font: "Poiret One";
+    --paragraph-font: Quicksand, Helvetica, sans-Serif;
 }
 
 /*
@@ -40,6 +40,7 @@ nav ul li a{
     text-align: center;
     padding: 10px;
     text-decoration: none;
+    font-family: var(--heading-font);
 }
 
 li a:hover:not(.active) {
@@ -68,6 +69,7 @@ footer {
     max-width: 960px;
     margin: 0 auto;
     background-color: var(--first);
+    font-family: var(--paragraph-font);
 }
 
 header {
@@ -92,6 +94,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     margin-left: 30px;
+    font-family: var(--paragraph-font);
 }
 
 .bodyimage {
@@ -113,7 +116,6 @@ footer {
     background-color: var(--third);
     color: var(--final);
     border: 1px solid var(--fourth);
-    /*padding: 10px;*/
 }
 
 /*
