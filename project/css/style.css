@@ -67,6 +67,8 @@ header {
     color: var(--final);
     border: 1px solid var(--fourth);
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 header img {
@@ -79,9 +81,9 @@ header img {
 
 header h1 {
     font-size: 2.2em;
-    margin: 0 0 0 0;
     display: flex;
     flex-direction: row;
+    margin-left: 30px;
 }
 
 .bodyimage {
@@ -103,7 +105,7 @@ footer {
     background-color: var(--third);
     color: var(--final);
     border: 1px solid var(--fourth);
-    /*padding: 10px;
+    /*padding: 10px;*/
 }
 
 /*
