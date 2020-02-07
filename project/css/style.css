@@ -12,8 +12,8 @@
     --third: #183207;
     --fourth: #4D230F;
     --final: #E2B77C;
-    --heading-font: "Poiret One";
-    --paragraph-font: Quicksand, Helvetica, sans-Serif;
+    --main: "Poiret One";
+    --submain: Quicksand, Helvetica, sans-Serif;
 }
 
 /*
@@ -40,10 +40,33 @@ nav ul li a{
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-family: var(--heading-font);
+    font-family: var(--submain);
 }
 
 li a:hover:not(.active) {
+    background-color: var(--second);
+}
+
+footer nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer nav ul li {
+    flex: 1 1 100%;
+}
+
+footer nav ul li a{
+    display: block;
+    background-color: var(--final);
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+footer li a:hover:not(.active) {
     background-color: var(--second);
 }
 
@@ -55,7 +78,7 @@ li a:hover:not(.active) {
 
 body {
     background-color: var(--first);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .page-container {
@@ -69,7 +92,7 @@ footer {
     max-width: 960px;
     margin: 0 auto;
     background-color: var(--first);
-    font-family: var(--paragraph-font);
+    font-family: var(--submain);
 }
 
 header {
@@ -90,11 +113,20 @@ header img {
 }
 
 header h1 {
-    font-size: 2.2em;
+    font-size: 2rem;
     display: flex;
     flex-direction: row;
     margin-left: 30px;
-    font-family: var(--paragraph-font);
+    font-family: var(--main);
+}
+
+.motto {
+    font-family: var(--submain);
+    font-style: italic;
+	letter-spacing: 1pt;
+	color: white;
+	margin-left: 40px;
+	font-size: .9rem;
 }
 
 .bodyimage {
@@ -105,17 +137,26 @@ header h1 {
 h2 {
     color: var(--third);
     background-color: var(--second);
+    font-size: 1.75rem;
+    font-family: var(--main);
 }
 
 p {
     color: black;
     background-color: var(--second);
+    font-size: 1.25rem;
 }
 
 footer {
     background-color: var(--third);
     color: var(--final);
     border: 1px solid var(--fourth);
+    font-size: .75rem;
+    font-family: var(--main);
+}
+
+footer img {
+width: 30px;
 }
 
 /*
