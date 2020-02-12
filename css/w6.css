@@ -9,7 +9,7 @@ body {
 .content1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 557px;
+    max-width: 556px;
     grid-gap: 20px;
     justify-items: center;
     margin: 34px;
