@@ -4,7 +4,8 @@ body {
     margin: 30px;
     font-family: 'Courier New', Courier, monospace
 }
-/*#region Layout 1 styles*/
+
+/* #region  Content1 */
 .content1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,14 +35,15 @@ body {
 }
 
 .blue1 {
-    width: 100% ;
+    width: 100%;
     height: 100px;
     background-color: blue;
     grid-column: 1/3;
 }
-/*#endregion*/
 
-/*#region Layout 2 styles*/
+/* #endregion */
+
+/* #region  Content2 */
 .content2 {
     position: relative;
 }
@@ -82,9 +84,10 @@ body {
     top: 160px;
     left: 160px;
 }
-/*#endregion*/
 
-/*#region Layout 3 styles*/
+/* #endregion */
+
+/* #region  Content3 */
 .content3 {
     position: relative;
 }
@@ -121,4 +124,5 @@ body {
     background-color: blue;
     grid-column: 1/3;
 }
-/*#endregion*/
+
+/* #endregion */

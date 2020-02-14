@@ -1,9 +1,4 @@
-/*
------------------------------------------------------------------------------------------------
--- -main section-
-TO DO LIST: Margin, Border, Padding и Content
------------------------------------------------------------------------------------------------
-*/
+/* #region  Root */
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap');
 
 :root {
@@ -16,12 +11,9 @@ TO DO LIST: Margin, Border, Padding и Content
     --submain: Quicksand, Helvetica, sans-Serif;
 }
 
-/*
------------------------------------------------------------------------------------------------
--- -navigation section & lists-
------------------------------------------------------------------------------------------------
-*/
+/* #endregion */
 
+/* #region  TOP NAV */
 nav ul {
     display: flex;
     list-style-type: none;
@@ -33,7 +25,7 @@ nav ul li {
     flex: 1 1 100%;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     background-color: var(--final);
     color: var(--four);
@@ -47,6 +39,9 @@ li a:hover:not(.active) {
     background-color: var(--second);
 }
 
+/* #endregion */
+
+/* #region  FOOT NAV */
 footer nav ul {
     display: flex;
     list-style-type: none;
@@ -58,7 +53,7 @@ footer nav ul li {
     flex: 1 1 100%;
 }
 
-footer nav ul li a{
+footer nav ul li a {
     display: block;
     background-color: var(--final);
     text-align: center;
@@ -70,12 +65,9 @@ footer li a:hover:not(.active) {
     background-color: var(--second);
 }
 
-/*
------------------------------------------------------------------------------------------------
--- -BODY and other elements-
------------------------------------------------------------------------------------------------
-*/
+/* #endregion */
 
+/* #region  BODY + INGREDIENTS */
 body {
     background-color: var(--first);
     font-size: 16px;
@@ -123,9 +115,9 @@ header h1 {
 .motto {
     font-family: var(--submain);
     font-style: italic;
-	letter-spacing: 1pt;
-	color: white;
-	margin-left: 30px;
+    letter-spacing: 1pt;
+    color: white;
+    margin-left: 30px;
     font-size: 1rem;
 }
 
@@ -156,9 +148,12 @@ footer {
 }
 
 footer img {
-width: 30px;
+    width: 30px;
 }
 
+/* #endregion */
+
+/* #region  NOTES */
 /*
 -----------------------------------------------------------------------------------------------
 -- -NOTES-
@@ -171,3 +166,4 @@ THIRD--Green #183207
 FOURTH--orange #4D230F
 FINAL--brown #E2B77C
 */
+/* #endregion */
