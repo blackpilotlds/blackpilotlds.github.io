@@ -4,9 +4,7 @@ body {
     margin: 30px;
     font-family: 'Courier New', Courier, monospace
 }
-/*#region Layout 1*/
-
-/* Layout 1 styles */
+/*#region Layout 1 styles*/
 .content1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,35 +41,84 @@ body {
 }
 /*#endregion*/
 
-/* Layout 2 styles */
+/*#region Layout 2 styles*/
 .content2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 800px;
-    height: 391px;
-    grid-gap: 1px    ;
+    position: relative;
 }
 
 .red2 {
     width: 100px;
     height: 100px;
     background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .green2 {
     width: 100px;
     height: 100px;
     background-color: green;
+    position: absolute;
+    top: 60px;
+    left: 60px;
 }
 
 .gold2 {
     width: 100px;
     height: 100px;
     background-color: gold;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+
 }
 
 .blue2 {
     width: 100px;
     height: 100px;
     background-color: blue;
+    position: absolute;
+    top: 160px;
+    left: 160px;
 }
+/*#endregion*/
+
+/*#region Layout 3 styles*/
+.content3 {
+    position: relative;
+}
+
+.red3 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+}
+
+.green3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.gold3 {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+
+}
+
+.blue3 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+}
+/*#endregion*/
