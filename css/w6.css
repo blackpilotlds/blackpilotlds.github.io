@@ -45,7 +45,9 @@ body {
 
 /* #region  Content2 */
 .content2 {
-    max-width: 556px;
+    max-width: 250px;
+    height: 250px;
+
 }
 
 .red2 {
@@ -82,3 +84,177 @@ body {
 }
 
 /* #endregion */
+
+/* #region  Content3 */
+.content3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 808px;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-column-gap: 81px;
+}
+
+.red3 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+}
+
+.green3 {
+    width: 364px;
+    height: 200px;
+    background-color: green;
+
+}
+
+.gold3 {
+    width: 364px;
+    height: 200px;
+    background-color: gold;
+}
+
+.blue3 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+}
+
+/* #endregion */
+
+/* #region  Content4 */
+.content4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 590px;
+    height: 393px;
+    justify-content: space-between;
+}
+
+.red4 {
+    width: 295px;
+    height: 100%;
+    background-color: red;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.green4 {
+    width: 295px;
+    height: 131px;
+    background-color: green;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.gold4 {
+    width: 295px;
+    height: 131px;
+    background-color: gold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.blue4 {
+    width: 295px;
+    height: 131px;
+    background-color: blue;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/* #endregion */
+
+/* #region  Content5 */
+.content5 {
+    flex-wrap: wrap;
+    max-width: 648px;
+}
+
+.red5 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+.green5 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    float: left;
+    margin: 0 10px 1px 0;
+}
+
+.gold5 {
+    width: 100%;
+    height: 269px;
+    background-color: gold;
+}
+
+.content5 p {
+    margin: 0;
+}
+
+.blue5 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+/* #endregion */
+
+/* #region  Content6 */
+.content6 {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.red6 {
+    z-index: 1;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    opacity: .9;
+
+}
+
+.green6 {
+    z-index: 3;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 400px;
+    left: 0;
+    background-color: green;
+    opacity: .9;
+
+}
+
+.gold6 {
+    z-index: 3;
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    left: 400px;
+    background-color: gold;
+    opacity: .9;
+
+}
+
+.blue6 {
+    z-index: 2;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: 100px;
+    background-color: blue;
+    opacity: .9;
+}
+
+/* #endregion */
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index*/
