@@ -65,6 +65,14 @@ footer li a:hover:not(.active) {
     background-color: var(--second);
 }
 
+footer {
+    padding: 5px;
+}
+
+.signature {
+    padding: 5px;
+}
+
 /* #endregion */
 
 /* #region  BODY + INGREDIENTS */
