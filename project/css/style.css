@@ -221,6 +221,11 @@ h3 {
     }
 }
 
+.button {
+   text-decoration:none;
+   color: var(--third);
+}
+
 /* #endregion */
 
 /* #region  GRID */
