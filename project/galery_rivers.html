@@ -32,8 +32,88 @@
         <!-- #endregion -->
         <main>
             <div class="gallery-box-image-text">
-               <div class="gallery-box-"></div>
-               <div class="gallery-box-"></div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/11.jpg" alt="main-fork-from-top" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/12.jpg" alt="main-fork-in-action" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/13.jpg" alt="main-fork-return" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/21.jpg" alt="" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/22.jpg" alt="" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/23.jpg" alt="" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/31.jpg" alt="" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/32.jpg" alt="" class="imggal">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/project/images/galery_rivers/33.jpg" alt="" class="imggal">
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                </div>
+                <!-- https://byui-cit.github.io/wdd130/resources/subpage_content.html -->
+
+                <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <div class="item-1">
+                    <h1 class="ih">Main Fork of the Salmon River, Idaho</h1>
+                    <p class="ip">Nestled deep in the Frank Church Wilderness of No Return winds the Salmon river. The Salmon was
+                        given the nickname long ago as the River of No Return by the people living near it because of
+                        the number of folks that came to visit and fell so in love with the rugged beauty of the river
+                        that they never left. </p> <br>
+                    <p class="ip"> Herds of elk and deer graze on the hillsides around the river and bear and bighorn sheep are
+                        also commonly sighted. The river corridor is also lined with awe inspiring ponderosa pine which
+                        tower over the sandy beaches in the campsites and provide shelter from sun or rain when needed.
+                    </p> <br>
+                    <p class="ip"> Let's not forget the rapids! They range from class I-IV. The Salmon is one of the longest
+                        undammed rivers in the United States. As a free flowing river the water is higher, faster, and
+                        colder in the early summer and lower, slower, and warmer in the late summer. There are good
+                        rapids all summer...but families with children who like to swim tend to appreciate the late
+                        summer's slower, warmer water more. </p> <br>
+                </div>
+
+                <div class="item-2">
+                    <h1 class="ih">Desolation and Gray Canyon, Utah</h1 class="ih">
+                    <p class="ip"> Winding through canyons in central Utah, in some of the most desolate land anywhere, the Green
+                        river flows towards the mighty Colorado river and the sea. High grey stone cliffs, beautiful
+                        desert scenery, and great rapids have made this run famous. This 84-mile trip runs from from
+                        Sand Wash to Swaseys Rapid (just outside Green River Utah) and boasts outstanding scenery,
+                        interesting geologic formations, evidence of prehistoric and historic human activity, and great
+                        whitewater opportunities. </p> <br>
+                    <p class="ip"> Desolation is rated a Class II/III and is usually done in 6 days </p> <br>
+                    <p class="ip"> Desolation Canyon has been recognized as a National Landmark. This designation is based on the
+                        uniqueness and rich history that the canyon tells. </p> <br>
+                </div>
+                <div class="item-3">
+                    <h1 class="ih">Grand Canyon, Arizona</h1>
+                    <p class="ip"> This is the grand daddy of all canyons and the grand daddy of all river trips. You will never
+                        forget your visit to the Grand Canyon. </p> <br>
+                    <p class="ip"> Grand Canyon river rafting combines world-class whitewater with breathtaking scenery to make one
+                        truly unforgettable river experience. The canyon is filled not only with exhilarating whitewater
+                        rapids, but with side canyons and ancient indian ruins accessible only by river. </p> <br>
+                    <p class="ip"> CLASS I - X: The Grand Canyon uses a unique river rating scale. The rapids in the Canyon are
+                        technically rated I - X ( 1 - 10) to accommodate such a wide variety of rapids and river
+                        variances. However, most people are familiar with the regular I - V river rating scale, so we
+                        often refer to both. </p> <br>
+                </div>
             </div>
         </main>
         <footer>
@@ -56,6 +136,78 @@
                 </div>
             </div>
         </footer>
+        <button onclick="topFunction()" id="myBtn" class="myBtn_class" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+            // var slideIndex = 0;
+            // showSlides();
+
+            // function showSlides() {
+            //     var i;
+            //     var slides = document.getElementsByClassName("mySlides");
+            //     for (i = 0; i < slides.length; i++) {
+            //         slides[i].style.display = "none";
+            //     }
+            //     slideIndex++;
+            //     if (slideIndex > slides.length) {
+            //         slideIndex = 1
+            //     }
+            //     slides[slideIndex - 1].style.display = "block";
+            //     setTimeout(showSlides, 8000); // Change image every 2 seconds
+            // }
+        </script>
     </div>
 </body>
 

@@ -3,58 +3,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Whitewater Rafting Vacations | Dry Oar Boating | Welcome Aboard!</title>
-    <meta name="description" content="Wireframes">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Whitewater Rafting Vacations | Dry Oar Boating | Welcome Aboard!</title>
+  <meta name="description" content="Wireframes">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="page-container">
-        <header>
-            <img src="images/logo.png" alt="#">
-            <section>
-                <h1>Dry Oar Boating</h1>
-                <div class="motto">Come Ride the Rapids with Us!</div>
-            </section>
-            <!--https://www.freelogodesign.org/preview?lang=en&name=Dry%20Oar%20Boating&logo=ca726694-2ca8-48fe-8661-31309cf6b156-->
-        </header>
-        <nav>
-            <ul id="top-nav">
-                <li class="top-nav"><a class="top-nav-a" href="index.html">Home</a></li>
-                <li class="top-nav"><a class="top-nav-a" href="galery_rivers.html">Gallery</a></li>
-                <li class="top-nav"><a class="top-nav-a" href="rates.html">Rates</a></li>
-                <li class="top-nav"><a class="top-nav-a" href="contact.html">Contact</a></li>
+  <div class="page-container">
+    <header>
+      <img src="images/logo.png" alt="#">
+      <section>
+        <h1>Dry Oar Boating</h1>
+        <div class="motto">Come Ride the Rapids with Us!</div>
+      </section>
+      <!--https://www.freelogodesign.org/preview?lang=en&name=Dry%20Oar%20Boating&logo=ca726694-2ca8-48fe-8661-31309cf6b156-->
+    </header>
+    <nav>
+      <ul id="top-nav">
+        <li class="top-nav"><a class="top-nav-a" href="index.html">Home</a></li>
+        <li class="top-nav"><a class="top-nav-a" href="galery_rivers.html">Gallery</a></li>
+        <li class="top-nav"><a class="top-nav-a" href="rates.html">Rates</a></li>
+        <li class="top-nav"><a class="top-nav-a" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- #endregion -->
+    <main>
+      <div class="rate-box">
+        <h2>This page will give information about what trips are available, when trips are available, and how much they
+          cost.</h2>
+
+        <p>Prices and Dates for our 2016 Season</p>
+        <button class="collapsible ih">Open Section 1</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+        </div>
+        <button class="collapsible ih">Open Section 2</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+        </div>
+        <button class="collapsible ih">Open Section 3</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+        </script>
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible -->
+      </div>
+    </main>
+    <footer>
+      <div class="signature-grid">
+        <div class="signature"> &copy; 2020 Dry Oar | Sergei Aleinikov | Section WDD 130-05</div>
+        <div id="bot-nav-div">
+          <nav>
+            <ul id="bot-nav">
+              <li class="bot-nav"> <a href="https://www.instagram.com/"> <img
+                    src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="instagram"></a></li>
+              <li class="bot-nav"><a href="https://www.youtube.com/"><img
+                    src="https://byui-cit.github.io/wdd130/images/icons/color/youtube.png" alt="youtube"></a></li>
+              <li class="bot-nav"><a href="https://www.facebook.com/"><img
+                    src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="facebook"></a></li>
             </ul>
-        </nav>
-        <!-- #endregion -->
-        <main>
-            <div class="rates-box">
-            </div>
-        </main>
-        <footer>
-            <div class="signature-grid">
-                <div class="signature"> &copy; 2020 Dry Oar | Sergei Aleinikov | Section WDD 130-05</div>
-                <div id="bot-nav-div">
-                    <nav>
-                        <ul id="bot-nav">
-                            <li class="bot-nav"> <a href="https://www.instagram.com/"> <img
-                                        src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
-                                        alt="instagram"></a></li>
-                            <li class="bot-nav"><a href="https://www.youtube.com/"><img
-                                        src="https://byui-cit.github.io/wdd130/images/icons/color/youtube.png"
-                                        alt="youtube"></a></li>
-                            <li class="bot-nav"><a href="https://www.facebook.com/"><img
-                                        src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
-                                        alt="facebook"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </footer>
-    </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" class="myBtn_class" title="Go to top">Top</button>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+  </div>
 </body>
 
 </html>
