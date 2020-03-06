@@ -254,10 +254,6 @@ footer {
     font-family: var(--submain);
 }
 
-.imggal {
-    width: 100%;
-}
-
 /* * {box-sizing:border-box} */
 
 .mySlides {
@@ -423,7 +419,7 @@ h3 {
 }
 
 .collapsible {
-    background-color: #777;
+    background-color: var(--first);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -436,7 +432,7 @@ h3 {
 
 .activeO,
 .collapsible:hover {
-    background-color: #555;
+    background-color: var(--second);
 }
 
 .content {
