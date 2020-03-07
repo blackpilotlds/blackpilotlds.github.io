@@ -32,6 +32,43 @@
         <!-- #endregion -->
         <main>
             <div class="contact-box">
+                <h2>GET IN TOCH</h2>
+                <p>PHONE</p>
+                <p>(801) 954-1233</p><br>
+                <p>EMAIL</p>
+                <p>cs@dryoarboating.com</p><br>
+                <p>ADDRESS</p>
+                <p>4756  Kemper Lane<br>Salt Lake City, Utah 84104</p><br>
+                <h2>CONTACT US</h2>                
+                <div class="container-contact-box">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+                        <label for="e-mail">Email</label>
+                        <input type="text" id="e-mail" name="email" placeholder="Your email..">
+
+                        <label for="c-phone">Phone Number</label>
+                        <input type="text" id="c-phone" name="phone" placeholder="Your phone number..">
+
+                        <label for="trip">Choose Your Trip</label>
+                        <select id="trip" name="trip">
+                            <option value="canyon-3-night">CANYON THREE-NIGHT TRIP</option>
+                            <option value="grand-canyon-6-night">GRAND CANYON SIX-NIGHT TRIP</option>
+                            <option value="river">RIVER FIVE-NIGHT TRIP</option>
+                            <option value="desolation">DESOLATION SIX-NIGHT TRIP</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </main>
         <footer>
@@ -54,6 +91,31 @@
                 </div>
             </div>
         </footer>
+        <button onclick="topFunction()" id="myBtn" class="myBtn_class" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
     </div>
 </body>
 

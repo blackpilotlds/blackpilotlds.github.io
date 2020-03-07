@@ -442,8 +442,69 @@ h3 {
     background-color: #f1f1f1;
 }
 
-.collapsible, ih {
+.collapsible,
+ih {
     font-size: 1.2em;
+}
+
+/* #endregion */
+/* #region  CONTACT FORM */
+.contact-box {
+    margin: 0px 20px 0 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container-contact-box {
+    border-radius: 5px;
+    background-color: var(--first);
+    padding: 20px;
+}
+
+label {
+    color: white;
+}
+/* #endregion */
+/* #region  TABLE */
+table {
+    font-family: var(--main);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid var(--third);
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 /* #endregion */
