@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W10 Activity: HTML Forms</title>
+    <meta name="description" content="HTML forms, class activity.">
+</head>
+
+<body>
+    <header>
+        <h1>W10 Activity: HTML Forms</h1>
+    </header>
+    <main>
+        <form action="thanks.html" method="post">
+            <label for="firstName">Please enter your first name: </label>
+            <input type="text" id="firstName" name="firstName" required size="40" placeholder="Enter Your First Name" />
+            <label for="zipCode">Please enter your zip code: </label>
+            <input type="number" id="zipCode" name="zipCode" value="454092" />
+            <label for="state">Please select your State : </label>
+            <select name="state" id="state">
+                <option value="" disabled>Choose from this list</option>
+                <option value="testA">Alaska</option>
+                <option value="testB">Nevada</option>
+                <option value="testC">New Mexico</option>
+            </select>
+            <label for="comments">Any Comments?:</label>
+            <textarea name="comments" id="comments"></textarea>
+            <button></button> 
+            <!-- bookmark 17:18 -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2020 | Sergei Aleinikov | Utah | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+            Learning</p>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- header>h1^main>form^footer>p -->
