@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W10 Activity: HTML Forms</title>
     <meta name="description" content="HTML forms, class activity.">
+    <link rel="stylesheet" href="/css/forms.css">
 </head>
 
 <body>
-    <header>
-        <h1>W10 Activity: HTML Forms</h1>
-    </header>
-    <main>
-        <form action="thanks.html" method="post">
+    <div>
+        <header>
+            <h1>W10 Activity: HTML Forms</h1>
+        </header>
+        <main>
+            <div id="feedback"></div>
+            <form action="thanks.html" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+            <!-- <form action="thanks.html" method="post">
             <label for="firstName">Please enter your first name: </label>
-            <input type="text" id="firstName" name="firstName" required size="40" placeholder="Enter Your First Name" />
+            <input type="text" id="firstName" name="firstName" required size="40" placeholder="Enter Your First Name" pattern="[A-Z][a-z]-{1,25}"/>
             <label for="zipCode">Please enter your zip code: </label>
             <input type="number" id="zipCode" name="zipCode" value="454092" />
             <label for="state">Please select your State : </label>
@@ -27,17 +49,22 @@
             </select>
             <label for="comments">Any Comments?:</label>
             <textarea name="comments" id="comments"></textarea>
-            <button></button> 
-            <!-- bookmark 17:18 -->
-        </form>
-    </main>
-    <footer>
-        <p>&copy;2020 | Sergei Aleinikov | Utah | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
-            Learning</p>
-    </footer>
-
+            <button type="submit">Register for the class</button> 
+            bookmark 17:18 
+        </form> -->
+        </main>
+        <footer>
+            <p>&copy;2020 | Sergei Aleinikov | Utah | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho
+                    Online
+                    Learning</p>
+        </footer>
+    </div>
+    <script src="js/forms.js"></script>
 </body>
 
 </html>
 
 <!-- header>h1^main>form^footer>p -->
+<!-- https://codepen.io/blazzard-jason/pen/oMRdJg -->
+<!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form -->
+<!-- UX user experience -->
