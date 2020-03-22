@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+    margin: 30px;
+}
+
+.content1 {
+    width: 250px;
+}
+
+table {
+    font-family: Arial;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgb(223, 220, 220);
+    border-collapse: collapse;
+    
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: black;
+    color: yellow;
+    }
+
+.subheader {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid var(--third);
+    padding: 8px;
+    background-color: white;
+    border: 1px solid rgb(223, 220, 220);
+}
+
+.love {
+    background-color: rgb(192, 192, 192);
+}
