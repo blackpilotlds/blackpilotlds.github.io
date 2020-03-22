@@ -16,6 +16,8 @@ table {
     filter: drop-shadow(0 0 1rem black)
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+
 .header {
     text-align: center;
     font-weight: bold;
