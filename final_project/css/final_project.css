@@ -1,17 +1,15 @@
 /* #region  ROOT */
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap');
-
-/* https://fonts.google.com/?subset=cyrillic */
-/* https://fonts.google.com/?query=ubun */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed&display=swap');
 
 :root {
-    --first: #6B6E59;
-    --second: #5E8E71;
-    --third: #183207;
-    --fourth: #4D230F;
-    --final: #E2B77C;
-    --main: "Poiret One", serif;
-    --submain: Quicksand, Helvetica, sans-Serif;
+    --first: #ffffff;
+    --second: #0000ff;
+    --third: #ff0000;
+    --iifirst: #d00000;
+    --iisecond: #ffba08;
+    --iithird: #000000;
+    --main: 'Ubuntu', sans-serif;
+    --submain: 'Ubuntu Condensed', sans-serif;
 }
 /* #endregion */
 
@@ -32,4 +30,8 @@ footer {
     margin: 0 0 0 0;
     background-color: var(--final);
     font-family: var(--submain);
+}
+
+h2 {
+    font-family: var(--main);
 }
