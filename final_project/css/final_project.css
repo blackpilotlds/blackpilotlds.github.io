@@ -8,13 +8,15 @@
     --iifirst: #d00000;
     --iisecond: #ffba08;
     --iithird: #000000;
+    --background: #0fa3b1;
+    --iibackground: #b5e2fa;
     --main: 'Ubuntu', sans-serif;
-    --submain: 'Ubuntu Condensed', sans-serif;
+    --iimain: 'Ubuntu Condensed', sans-serif;
 }
 /* #endregion */
 
 body {
-    background-color: var(--first);
+    background-color: var(--iibackground);
     font-size: 16px;
 }
 
