@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 12 Media Card</title>
     <style>
+        .page-container {
+            max-width: 320px;
+            margin: 0 auto;
+            box-shadow: 1px 1px 4px 1px #888;
+            border-radius: 3px 3px 3px 3px;
+            overflow: hidden;
+            font-size: 16px;
+            font-family: sans-serif, Arial, Helvetica;
+        }
+
+        .card {
+            max-width: 320px;
+            background-color: white;
+        }
+
+        .card img {
+            max-width: 100%;
+            margin: none;
+            /* border-radius: 3px 3px 0 0; */
+        }
+
         button {
-            padding: 0.5rem;
+            padding: 0.3rem;
             border: 1px solid #777;
             color: #444;
             background-color: #fff;
@@ -21,16 +42,58 @@
             border-radius: 0 5px 5px 0;
             border-left: none;
         }
+
+        footer {
+            margin: 20px 20px 20px 20px;
+        }
+
+        footer span {
+            font-size: .8em;
+            color: #444;
+        }
+
+        .bodyPar {
+            font-size: .8em;
+            margin: 20px 20px 20px 20px;
+        }
+
+        .footerr {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            justify-content: space-around;
+            justify-content: center;
+
+
+        }
+
+        .buttons {
+            grid-column: 1/2;
+        }
+
+        .spann {
+            grid-column: 3/3;
+            justify-self: righ;
+            margin: auto 0 auto auto;
+        }
     </style>
 </head>
 
 <body>
-    <footer>
-        <article>
-            <button class="viewButton" type="button">View</button><button class="editButton" type="button">Edit</button>
+    <div class="page-container">
+        <article class="card">
+            <img src="https://picsum.photos/320/240" alt="random immage size 320 x 240">
+            <p class="bodyPar">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
         </article>
-        <span>9 mins</span>
-    </footer>
+        <footer class="footerr">
+            <article class="buttons">
+                <button class="viewButton" type="button">View</button><button class="editButton"
+                    type="button">Edit</button>
+            </article>
+            <span class="spann">9 mins</span>
+        </footer>
+    </div>
 </body>
 
 </html>
