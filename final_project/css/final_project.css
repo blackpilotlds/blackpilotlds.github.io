@@ -1,22 +1,21 @@
-/* #region  ROOT */
+/* #region  MAIN SECTION */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed&display=swap');
 
 :root {
     --first: #ffffff;
     --second: #0000ff;
     --third: #ff0000;
-    --iifirst: #d00000;
-    --iisecond: #ffba08;
-    --iithird: #000000;
+    --iiFirst: #d00000;
+    --iiSecond: #ffba08;
+    --iiThird: #000000;
     --background: #0fa3b1;
-    --iibackground: #b5e2fa;
+    --iiBackground: #b5e2fa;
     --main: 'Ubuntu', sans-serif;
-    --iimain: 'Ubuntu Condensed', sans-serif;
+    --iiMain: 'Ubuntu Condensed', sans-serif;
 }
-/* #endregion */
 
 body {
-    background-color: var(--iibackground);
+    background-color: var(--iiBackground);
     font-size: 16px;
 }
 
@@ -25,15 +24,64 @@ body {
     margin: 0 auto;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--main);
+}
+
 header,
 main,
 footer {
     max-width: 960px;
     margin: 0 0 0 0;
     background-color: var(--final);
-    font-family: var(--submain);
+    font-family: var(--iiMain);
 }
 
-h2 {
-    font-family: var(--main);
+/* #endregion */
+
+/* #region  SITE PLAN */
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
 }
+
+.colors th {
+    background-color: #999
+}
+
+.colors td {
+    width: 12.5%;
+    height: 3em
+}
+
+.first {
+    background-color: var(--first);
+}
+.second {
+    background-color: var(--second);
+}
+.third {
+    background-color: var(--third);
+}
+.iiFirst {
+    background-color: var(--iiFirst);
+}
+.iiSecond {
+    background-color: var(--iiSecond);
+}
+.iiThird {
+    background-color: var(--iiThird);
+    color: white;
+}
+.background {
+    background-color: var(--background);
+}
+.iiBackground {
+    background-color: var(--iiBackground);
+}
+
+/* #endregion */
