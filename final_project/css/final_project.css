@@ -14,19 +14,26 @@
     --iiMain: 'Ubuntu Condensed', sans-serif;
 }
 
-body {
+html {
     background-color: var(--iiBackground);
-    font-size: 16px;
 }
 
-.page-container {
+body {
+    font-size: 16px;
     max-width: 960px;
     margin: 0 auto;
+    background-color: var(--background);
+    padding: 1em
 }
+
+/* .page-container {
+    
+} */
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var(--main);
 }
 
@@ -60,28 +67,43 @@ footer {
 
 .first {
     background-color: var(--first);
+    border: 1px solid black;
 }
 .second {
     background-color: var(--second);
+    color: white;
+    border: 1px solid white;
 }
 .third {
     background-color: var(--third);
+    border: 1px solid black;
 }
 .iiFirst {
     background-color: var(--iiFirst);
+    border: 1px solid black;
 }
 .iiSecond {
     background-color: var(--iiSecond);
+    border: 1px solid black;
 }
 .iiThird {
     background-color: var(--iiThird);
     color: white;
+    border: 1px solid white;
 }
 .background {
     background-color: var(--background);
+    border: 1px solid black;
 }
 .iiBackground {
     background-color: var(--iiBackground);
+    border: 1px solid black;
+}
+
+.colored {
+    color: var(--background);
+    padding: 3px;
+    background-color: var(--iiSecond);
 }
 
 /* #endregion */
