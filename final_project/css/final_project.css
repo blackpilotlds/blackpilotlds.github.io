@@ -225,11 +225,24 @@ footer p {
 /* #endregion */
 
 /* #region  MAIN */
-.mainGrid {}
+.mainGrid {
+    grid-template-columns: repeat(5 fr);
+}
 
 .mainGrid p {
-    font-size: 4em;
+    font-size: 5em;
     font-family: var(--main);
+    color: var(--first);
+}
+
+.image01 {
+
+}
+.image02 {
+
+}
+.image03 {
+    
 }
 
 /* #endregion */
