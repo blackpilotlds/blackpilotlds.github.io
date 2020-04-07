@@ -26,10 +26,6 @@ body {
     padding: 1em
 }
 
-/* .page-container {
-    
-} */
-
 h1,
 h2,
 h3,
@@ -140,11 +136,12 @@ footer {
     grid-area: 1/2/1/4;
     width: 100%;
     height: auto;
+    padding: 5px 5px 5px 5px;
 }
 
 .title {
     grid-area: 1/4/1/8;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -214,12 +211,25 @@ footer {
 
 /* #endregion */
 
+/* #region  FOOTER */
 footer {
     font-size: 1em;
     background-color: var(--iiSecond);
 }
- 
+
 footer p {
     margin-bottom: 0em;
     text-align: center;
 }
+
+/* #endregion */
+
+/* #region  MAIN */
+.mainGrid {}
+
+.mainGrid p {
+    font-size: 4em;
+    font-family: var(--main);
+}
+
+/* #endregion */
