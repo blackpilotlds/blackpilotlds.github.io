@@ -213,3 +213,13 @@ footer {
 }
 
 /* #endregion */
+
+footer {
+    font-size: 1em;
+    background-color: var(--iiSecond);
+}
+ 
+footer p {
+    margin-bottom: 0em;
+    text-align: center;
+}
