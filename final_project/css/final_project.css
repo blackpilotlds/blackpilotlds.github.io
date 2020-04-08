@@ -345,27 +345,29 @@ Third */
 .bodyForms {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 425px;
+    /* Form outline */
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
     font-family: var(--main);
     text-align: center;
+    background-color: var(--background);
 }
 
 #feedback {
-    font-family: var(--main);
+    font-family: var(--iiMain);
     display: none;
+    color: var(--iiSecond);
+    padding-bottom: 5px;
+    font-weight: bolder;
+    /* we will make the element invisible until the form is submitted successfully */
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-form {
-    display: inline-block;
 }
 
 form li+li {
@@ -380,10 +382,11 @@ label {
 
 input,
 textarea {
-    font: 1em var(--iiMain);
+    font-family: var(--iiSecond);
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
+    background-color: var(--iiSecond);
 }
 
 input:focus,
