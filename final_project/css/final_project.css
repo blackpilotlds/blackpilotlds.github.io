@@ -250,7 +250,7 @@ footer p {
 .image01 {
     grid-area: 1/6/1/7;
     z-index: 2;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 10px;
     box-shadow: 10px 5px 5px var(--iiThird);
     border-radius: 50%;
 }
@@ -263,7 +263,7 @@ footer p {
 .image02 {
     grid-area: 2/6/2/7;
     z-index: 2;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 10px;
     box-shadow: 10px 5px 5px var(--iiThird);
     border-radius: 50%;
 
@@ -278,7 +278,7 @@ footer p {
 .image03 {
     grid-area: 3/6/3/7;
     z-index: 2;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 10px;
     box-shadow: 10px 5px 5px var(--iiThird);
     border-radius: 50%;
 
@@ -294,11 +294,23 @@ footer p {
     z-index: 3;
 }
 
-/* #endregion */
+.firstPageH1 {
+    grid-area: 1/1/1/7;
+    z-index: 4;
+    font-size: 1.75em;
+    padding-left: 10px;
+    
+}
 
-/* First
-Second
-Third */
+.firstPageP1 {
+    grid-area: 1/1/4/6;
+    z-index: 4;
+    font-size: 1.75em;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+/* #endregion */
 
 /* #region  FINAL */
 .final-container {
@@ -413,13 +425,19 @@ button {
     margin: 10px 10px 10px 1em;
 }
 
-.socialMedia {
-    text-align: center;
-}
-
 .socialMediaIcons {
     margin: auto;
-    width: 266px;
+    width: 264px;
+}
+
+.socialMediaIcons img {
+    border: 1px solid var(--iiBackground);
+
+}
+
+.socialMediaIcons p {
+    margin-left: 0em;
+    text-align: center;
 }
 
 /* #endregion */
