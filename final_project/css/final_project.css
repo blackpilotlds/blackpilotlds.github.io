@@ -374,6 +374,7 @@ footer p {
     color: var(--iiSecond);
     padding-bottom: 10px;
     font-weight: bolder;
+    font-size: 1.5em;
     /* we will make the element invisible until the form is submitted successfully */
 }
 
@@ -399,7 +400,7 @@ textarea {
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
-    background-color: var(--iiSecond);
+    background-color: var(--iiBackground);
 }
 
 input:focus,
