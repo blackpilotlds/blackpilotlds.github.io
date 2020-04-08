@@ -412,4 +412,14 @@ button {
 #address {
     margin: 10px 10px 10px 1em;
 }
+
+.socialMedia {
+    text-align: center;
+}
+
+.socialMediaIcons {
+    margin: auto;
+    width: 266px;
+}
+
 /* #endregion */
