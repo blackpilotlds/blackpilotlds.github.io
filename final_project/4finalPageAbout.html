@@ -32,15 +32,68 @@
         </div>
     </header>
     <main>
-        <div class="mainGrid">
-            <p>WIP page FINAL About and Contact Information with form</p>
-            <img src="/final_project/images/01main-page-white-layer.png" alt="cover" class="imageCover">
-            <img src="/final_project/images/01faces.png" alt="people world faces" class="image01">
-            <img src="/final_project/images/01faces-WHITE.png" alt="white line" class="image001">
-            <img src="/final_project/images/02hands.png" alt="voting hands" class="image02">
-            <img src="/final_project/images/02hands-BLUE.png" alt="blue line" class="image002">
-            <img src="/final_project/images/03hands-circle.png" alt="unity" class="image03">
-            <img src="/final_project/images/03hands-circle-RED.png" alt="red line" class="image003">
+        <div class="final-container">
+            <h1>About | Resources | Contact Us</h1>
+            <h2>About</h2>
+            <p>Basic <strong>political education</strong> for Russian Citizens and its friends.</p>
+            <p><em><strong>FAQ</strong></em> will be based on live community forum and its archives. Each active
+                participant and
+                her answers will be peer reviewed and tagged accordingly.</p>
+            <p>For the purpose of referencing each answer will be supported w/h materials <strong>from creadible sources
+                    only.</strong>
+            </p>
+            <h2>Resources</h2>
+            <p>The Constitution of the Russian Federation</p>
+            <!-- <p class="lists">Russian Version</p> -->
+            <ul>
+                <li><a href="http://kremlin.ru/acts/constitution">Russian Version</a></li>
+                <li><a href="http://www.constitution.ru/en/10003000-01.htm">English Version</a></li>
+            </ul>
+            <p>Russian State Insignia</p>
+            <ul>
+                <li><a href="http://en.flag.kremlin.ru/flag/">The Flag</a></li>
+                <li><a href="http://en.flag.kremlin.ru/emblem/">National Coat of Arms</a></li>
+                <li><a href="http://en.flag.kremlin.ru/anthem/">National Anthem</a></li>
+            </ul>
+            <p>Universal Declaration of Human Rights</p>
+            <ul>
+                <li><a href="https://www.un.org/ru/universal-declaration-human-rights/index.html">Universal Russian
+                        Version</a>
+                </li>
+                <li><a href="https://www.un.org/en/universal-declaration-human-rights/">Universal English Version</a>
+                </li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p id="address">Multinational Foundation<br>
+                Dobroselskaya Ul., bld. 190, appt. 2<br>
+                Vladimir, Vladimirskaya oblast<br>
+                +7(4922)11-56-76<br>
+                multinationalpeople@mpr.org<br>
+            </p>
+            <div clas="bodyForms">
+                <main>
+                    <div id="feedback"></div>
+                    <form action="thanks.html" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_mail">
+                            </li>
+                            <li>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">Send your message</button>
+                            </li>
+                        </ul>
+                    </form>
+            </div>
+            <p>Find Us on Social Media!</p>
         </div>
     </main>
     <footer>
@@ -49,7 +102,7 @@
                     href="/final_project/site-plan.html">Site Plan</a></p>
         </div>
     </footer>
-
+    <script src="/final_project/js/final.js"></script>
 </body>
 
 </html>
