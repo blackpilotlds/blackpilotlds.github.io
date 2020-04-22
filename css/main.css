@@ -38,6 +38,10 @@ footer {
     border-radius: 10px 40px 40px 40px;
 }
 
+main {
+    margin-left: 20px;
+}
+
 footer {
     font-size: .85em;
     text-align: center;
