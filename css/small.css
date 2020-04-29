@@ -24,16 +24,9 @@ footer {
     font-family: var(--iiMain);
 }
 
-/* #container {
-    position: relative;
-} */
-
 #profileImg {
     width: 25%;
     height: auto;
-    /* position: absolute;
-    top: 10px;
-    left: 400px; */
     margin-top: 5px;
     margin-right: 5px;
     float: right;
@@ -62,11 +55,12 @@ h1 {
     background-color: var(--background);
     border-radius: 10px;
     font-family: var(--main);
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 
 h2 {
     border-bottom: thin solid var(--first);
     margin-right: 20px;
     font-family: var(--main);
+    font-size: 1rem;
 }
