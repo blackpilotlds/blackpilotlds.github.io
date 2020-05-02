@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+:root {
+  --first: #412234;
+  --second: #6d466b;
+  --third: #b49fcc;
+  --background: #ead7d7;
+  --main: "Poppins", sans-serif;
+  --iiMain: "Nunito", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header,
+main,
+footer {
+  font-family: var(--iiMain);
+  padding: 5px;
+  margin-top: 0%;
+}
+
+header {
+    background-color: var(--background);
+}
+
+header h1 {
+    margin: 0%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--main);
+  color: var(--first);
+}
+
+.t {
+  font-weight: bold;
+}
