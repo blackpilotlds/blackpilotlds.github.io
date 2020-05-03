@@ -61,17 +61,22 @@ h4 {
 }
 
 header h1,
-p {
+h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   color: white;
+}
+
+header h2 {
+    font-weight: lighter;
+    font-size: .9em;
 }
 
 p {
   font-family: var(--iiMain);
 }
 
-h2 {
+h3 {
   text-align: center;
   background-color: var(--first);
   color: white;
@@ -119,7 +124,6 @@ p {
 
 section p {
     text-align: left;
-    color: black;
 }
 
 a {
