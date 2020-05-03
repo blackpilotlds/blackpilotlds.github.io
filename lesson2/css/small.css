@@ -10,14 +10,14 @@
 }
 
 body {
-  background-color: greenyellow;
-  font-size: 16px;
+  /* background-color: greenyellow; */
+  font-size: 12px;
   max-width: 960px;
   margin: 0 auto;
   /* padding: 1em */
 }
 
-main {
+.gridContainer {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -47,8 +47,8 @@ header {
 footer {
   text-align: center;
   background-color: var(--first);
-  padding: 5px 5px 5px 5px;
-  font-size: 0.6em;
+  padding: 20px 20px 20px 20px;
+  font-size: .9em;
   color: white;
 }
 
@@ -77,10 +77,11 @@ h2 {
   color: white;
   border-radius: 10px 10px 0px 0px;
   padding: 5px 5px 5px 5px;
+  margin-top: 0em;
 }
 
 table {
-  font-size: 0.8em;
+  font-size: 1em;
   width: 90%;
   border-collapse: collapse;
   text-align: left;
@@ -109,7 +110,7 @@ td {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 section p {
