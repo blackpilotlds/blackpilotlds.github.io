@@ -61,13 +61,13 @@ h4 {
 }
 
 header h1,
-h4 {
+p {
   margin-top: 5px;
   margin-bottom: 5px;
   color: white;
 }
 
-h4 {
+p {
   font-family: var(--iiMain);
 }
 
@@ -109,10 +109,19 @@ td {
   padding: 5px 5px 5px 10px;
 }
 
+th {
+    text-align: center;
+}
+
 p {
   font-size: 1.5em;
 }
 
 section p {
     text-align: left;
+}
+
+a {
+    color:white;
+    font-weight: bold;
 }
