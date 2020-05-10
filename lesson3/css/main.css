@@ -19,6 +19,11 @@ h1,
 h2,
 h3 {
   font-family: var(--main);
+  padding-left: 1em;
+}
+
+p {
+  padding-left: 1.5em;
 }
 
 header h1 {
