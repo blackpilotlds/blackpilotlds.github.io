@@ -15,8 +15,34 @@ body {
   font-family: var(--mainSecond);
 }
 
+header {
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+	display: flex;
+	align-items:center;
+  justify-content:center;
+  font-size: .7em;
+}
 
+header img {
+  width: 50px;
+  height: auto;
+}
 
-/* header {
-    background-color: var(--main);
-} */
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+  margin: 0 0 0 20px;
+}
+
+.motto {
+	/* font-style: italic; */
+	letter-spacing: 1pt;
+	color: red;
+	margin-left: 25px;
+	font-size: .6rem;
+}
