@@ -11,7 +11,7 @@
     Aleinikov Spring 2020 WDD 230-10 Web Frontend Development I"
     />
     <!-- https://byui.instructure.com/courses/98418/pages/the-weather-site-project?module_item_id=10581160 -->
-    <link rel="stylesheet" href="../css/normalize.css" />
+    <link href="../css/normalize.css" rel="stylesheet" />
     <link href="./css/small.css" rel="stylesheet" />
     <link href="./css/medium.css" rel="stylesheet" />
     <link href="./css/large.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
     <nav>
       <ul class="navigation">
         <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
-        <li><a href="../lesson4/">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="preston-4.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
@@ -40,9 +40,21 @@
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="container">
+        <h1>Preston</h1>
+        <div><h2>Weather Summary & hero image</h2></div>
+        <div><h2>Article Title by author & image</h2></div>
+        <div><h2>Contact Information and map</h2></div>
+      </div>
+    </main>
+    <footer>
+      &copy;What Temperature | Sergei Aleinikov
+      <br />
+      <div id="lastUpdated">
+        <script src="./js/todaysDate.js"></script>
+      </div>
+    </footer>
     <script src="js/nav.js"></script>
   </body>
 </html>
-<!-- BOOKMARK 00H:22m:05s -->
