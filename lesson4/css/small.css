@@ -106,11 +106,14 @@ main
 */
 
 main {
-  font-size: 0.8em;
+  font-size: .9em;
+}
+
+h2 {
   text-align: center;
 }
 
-main h2 {
+h3 {
   background-color: var(--background2);
   padding: 1em
 }
