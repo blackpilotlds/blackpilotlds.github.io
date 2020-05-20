@@ -125,8 +125,6 @@ h3 {
 
 .weatherImage {
   margin: 10px auto;
-  /* width: 320px;
-  height: 107px; */
 }
 
 .weatherImage img {
@@ -139,6 +137,7 @@ h3 {
  top: 10px;
  left: 10px;
  background: rgba(81, 253, 245, 0.6);;
+ padding: .5em;
 }
 
 /* #endregion */
