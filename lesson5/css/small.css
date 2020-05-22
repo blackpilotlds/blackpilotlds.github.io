@@ -175,7 +175,7 @@ table {
 #byWho {
   font-style: italic;
   color: darkslategray;
-  font-size: .8em;
+  font-size: 0.8em;
   margin-top: 0em;
   margin-bottom: 0em;
 }
@@ -197,6 +197,16 @@ table {
 
 .contact {
   padding: 1em 1em 1em 1em;
+}
+
+.contact,
+p {
+margin: 0 0 0 0;
+}
+
+.contact h3 {
+  margin-bottom: 0em;
+  color: black;
 }
 
 /* #endregion */
