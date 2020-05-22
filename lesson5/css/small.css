@@ -165,13 +165,38 @@ table {
 }
 
 .article {
-  padding: 1em 1em 1em 1em;
+  padding: 2em 1em 1em 1em;
+}
+
+.article h3 {
+  color: black;
+}
+
+#byWho {
+  font-style: italic;
+  color: darkslategray;
+  font-size: .8em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 .article img {
   margin-top: 1em;
   margin-bottom: 1em;
   box-shadow: 0 0 10px black;
+  width: 100%;
+  height: auto;
+}
+
+.contactContainer {
+  margin: 0 auto;
+  background-color: var(--background2);
+  width: 100%;
+  margin-top: 1em;
+}
+
+.contact {
+  padding: 1em 1em 1em 1em;
 }
 
 /* #endregion */
