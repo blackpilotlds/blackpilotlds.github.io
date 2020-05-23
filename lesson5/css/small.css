@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Oswald:wght@700&display=swap");
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
+
+/* 
+https://material.io/resources/icons/?icon=room&style=baseline
+http://google.github.io/material-design-icons/ 
+*/
 
 :root {
   --first: black;
@@ -22,10 +26,10 @@
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 24px; /* Preferred icon size 24px*/
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -43,7 +47,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
 /* #region  BODYHEADER */
@@ -161,7 +165,7 @@ h3 {
   position: relative;
   margin: 10px auto;
   width: 320px;
-  height: 107px;
+  height: auto;
   margin-bottom: 2em;
 }
 
@@ -193,6 +197,7 @@ table {
   text-align: right;
   padding-right: 0.1em;
   vertical-align: text-top;
+  color: white;
 }
 
 .weatherBannerTable tr td:nth-child(2) {
@@ -230,11 +235,13 @@ table {
   box-shadow: 0 0 10px black;
   width: 100%;
   height: auto;
+  border: 1px solid #bbb;
+  padding: 0.25rem;
 }
 
 .contactContainer {
   margin: 0 auto;
-  background-color: var(--background2);
+  background-color: var(--background1);
   width: 100%;
   margin-top: 1em;
 }
@@ -246,11 +253,8 @@ table {
   justify-content: center;
 }
 
-.contact p {
-margin: 0 0 0 0;
-}
-
-.contact h3 {
+.contact h3,
+table {
   margin-bottom: 0em;
   color: black;
 }
@@ -262,6 +266,18 @@ margin: 0 0 0 0;
 
 iframe {
   margin-left: 1em;
+  width: 140px;
+  height: 110px;
+  border: 2px solid black;
+}
+
+i {
+  color: red;
+}
+
+.icons img {
+  width: 20px;
+  margin-top: 1em;
 }
 
 /* #endregion */

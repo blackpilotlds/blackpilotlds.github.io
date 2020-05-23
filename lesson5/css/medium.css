@@ -1,10 +1,7 @@
 @media only screen and (min-width: 30.5em) {
-  body {
-    background-color: yellow;
-  }
   .navigation {
     display: flex;
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .navigation li {
     display: block; /* change state in small view */
@@ -20,7 +17,7 @@
   header {
     background-color: black;
     color: white;
-    font-size: 1.35em;
+    font-size: 1em;
   }
 
   header img {
@@ -35,14 +32,50 @@
   .motto {
     letter-spacing: 1.5pt;
     margin-left: 37.5px;
-    font-size: .9rem;
+    font-size: 1em;
   }
 
   main {
-    font-size: 1.35em;
+    font-size: 1em;
   }
 
   footer {
-    font-size: 1.2em;
+    font-size: 1em;
   }
+
+  .weatherImageContainer {
+    margin: 10px auto;
+    width: 920px;
+    font-size: 1em;
+  }
+
+  .weatherImage {
+    margin-bottom: 0em;
+  }
+
+  .weatherBannerTable tr td:nth-child(2) {
+    font-weight: normal;
+  }
+  
+  .articleContainer {
+    margin: 0 auto;
+    background-color: var(--background2);
+    width: 920px;
+  }
+
+  .article {
+    padding: 1em 1em 1em 1em;
+  }
+
+  .article img {
+    width: 250px;
+    float:right;
+    margin: .5rem .25rem .5rem 1.25rem;
+  }
+
+  iframe {
+    width: 580px;
+    height: 220px;
+  }
+  
 }
