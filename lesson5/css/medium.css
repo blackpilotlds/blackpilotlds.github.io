@@ -68,7 +68,6 @@
   }
 
   .article img {
-    width: 250px;
     float:right;
     margin: .5rem .25rem .5rem 1.25rem;
   }
@@ -85,6 +84,4 @@
   footer {
     font-size: .9em;
 }
-
-
 }
