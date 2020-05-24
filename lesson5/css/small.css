@@ -211,6 +211,15 @@ table {
   font-weight: bolder;
 }
 
+.fiveDayForecastFlex {
+  display:none;
+}
+
+.fiveDayForecastFlex img {
+  width: 30px;
+  filter: invert(1);
+}
+
 .articleContainer {
   margin: 0 auto;
   background-color: var(--background2);
