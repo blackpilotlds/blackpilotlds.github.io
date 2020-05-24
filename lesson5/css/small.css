@@ -137,7 +137,8 @@ nav {
 }
 
 .navigation .active {
-  color: #660000;
+  background-color: black;
+  color: white;
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
@@ -195,6 +196,11 @@ table {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   color: white;
+}
+
+.weatherBanner h3{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 .weatherBannerTable tr td:nth-child(1) {
