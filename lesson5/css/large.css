@@ -52,4 +52,9 @@
   footer {
       font-size: 1em;
   }
+
+  .fiveDayForecastFlex {
+    font-size: 1.2em;
+  }
+
 }

@@ -211,13 +211,18 @@ table {
   font-weight: bolder;
 }
 
+.fiveDayForecastContainer {
+  display: none;
+}
+
 .fiveDayForecastFlex {
-  display:none;
+  display: none;
 }
 
 .fiveDayForecastFlex img {
-  width: 30px;
+  width: 50px;
   filter: invert(1);
+  margin: 1em 0 0em 0;
 }
 
 .articleContainer {
