@@ -10,7 +10,7 @@ Keyframe Animations, Badell Maman, 19 Nov.
   height: 100px;
   background: #00fdc8ff;
   border-radius: 100%;
-  animation: bounce 3s linear infinite, moveLeft 12s linear infinite;
+  animation: bounce 3s linear infinite paused, moveLeft 12s linear infinite paused;
 }
 
 @keyframes bounce {
@@ -116,8 +116,3 @@ nav {
   max-width: 960px;
   margin: 0 auto;
 }
-
-#countdown {
-  font-size: 2em;
-  color: red;
-}  

@@ -5,48 +5,23 @@ Keyframe Animations, Badell Maman, 19 Nov.
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed&display=swap');
 
 .ball {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: #00fdc8ff;
-  border-radius: 100%;
-  animation: bounce 3s linear infinite, moveLeft 12s linear infinite;
-}
-
-@keyframes bounce {
-  0% {
-    bottom: 100%; /*background-color: red;*/
-  }
-  25% {
-    bottom: 0;
     width: 100px;
     height: 100px;
+    background: #00fdc8ff; /*first color*/
+    position: relative;
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
+    border-radius:100%;
+    animation-fill-mode: forwards;
+    
   }
-  30% {
-    bottom: 0;
-    width: 110px;
-    height: 50px; /*background-color: blue;*/
+  @keyframes myfirst {
+    0%   {background: #B01224; left: 0px; top: 0px;}
+    25%  {background: #FC900D; left: 200px; top: 0px;}
+    50%  {background: #B06912; left: 200px; top: 200px;}
+    75%  {background: #FC0D28; left: 0px; top: 200px;}
+    100% {background: #B01224; left: 0px; top: 0px;} /*last color*/
   }
-  35% {
-    bottom: 0;
-    width: 100px;
-    height: 100px; /*background-color: green;*/
-  }
-  70% {
-    bottom: 100%; /*background-color: black;*/
-  }
-  100% {
-    bottom: 100%;
-  }
-}
-@keyframes moveLeft {
-  from {
-    left: 0;
-  }
-  to {
-    left: 100%;
-  }
-}
 
 body {
   width: 100%;
@@ -116,8 +91,3 @@ nav {
   max-width: 960px;
   margin: 0 auto;
 }
-
-#countdown {
-  font-size: 2em;
-  color: red;
-}  
