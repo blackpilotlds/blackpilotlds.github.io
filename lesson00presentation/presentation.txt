@@ -1,5 +1,7 @@
 1. Welcome guys! This is my presentation for you!
 
+My name is Sergei Aleinikov and 
+
 My topic is "Using CSS Keyframe Animations"
 
 ************************************************************************************
@@ -30,7 +32,8 @@ The Shorthand Animation Property
 
 So instead of writing those properties separately, we can use which known as
 "shorthand" animation property. And all tese attributes can be written in a
-single line. Today we are going to see both.
+single line. But we are going to see how different animation properties written
+in column instead, on slide 7.
 
 ====================================================================================
 1. Animation Name
@@ -54,6 +57,8 @@ screen to the right.
 
 Let's put 1 second for bounce and 4 seconds for the moveLeft.
 
+animation: bounce 1s linear infinite, moveLeft 4s linear infinite;
+
 And you can see the difference right away. Thanks.
 
 ====================================================================================
@@ -66,8 +71,10 @@ I'm not sure if you can see the difference, but I will try my best.
 
 I will apply ease-in-out value istead of lInear for moveLeft animation.
 
-As we apply ease-in-out then we can see that angle for the TrajEctory is getting
+As we apply ease-in-out then we can see that angle for the trajEctory is getting
 smaller at the beginning and at the end.
+
+animation: bounce 3s linear infinite, moveLeft 12s ease-in-out infinite;
 
 ====================================================================================
 4. Animation-Delay
@@ -83,7 +90,33 @@ my example I used 5 seconds delay for both of my keyframes.
 With an original css file that ball will loop its way Infinitely. But if we put
 specific number of repetition that will follow our guidance.
 
-For example lets put 4 repetitions for a bounce and 1 repetition for a moveLeft, and
-see the difference.
+For example lets put 4 repetitions for a bounce and 1 repetition for a moveLeft,
+and see the difference.
 
 As you can see that after one long way, it stops on the left corner.
+
+====================================================================================
+6. Animation-Direction
+====================================================================================
+
+For this example I used alternate value for Animation-Direction property. That
+value forces the ball to move back and forth Infinitely.
+
+====================================================================================
+7. Animation-Fill-Mode
+====================================================================================
+
+This property works with styles applied to animation. And as you can see value
+"forwards" will retain the last Keyframe settings.
+
+But, if we apply backwards that will use original color istead. Lets try it.
+
+====================================================================================
+8. Animation-Play-State
+====================================================================================
+
+Simply pause or runnig for your animation.
+
+We can pause this guy in the middle of his way.
+
+Thanks!
