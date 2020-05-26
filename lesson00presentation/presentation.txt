@@ -1,0 +1,47 @@
+1. Welcome guys! This is my presentation for you!
+
+My topic is "Using CSS Keyframe Animations"
+
+************************************************************************************
+So... JavaScript or CSS?
+
+Usually animation is the part of JavaScript BUT with modern browsers we can
+animate in CSS[1]
+************************************************************************************
+************************************************************************************
+What is the @keyframes?
+
+"The @keyframes CSS at-rule, 
+
+and by the way at-rules are
+
+...CSS statements that instructs CSS how to behave. They begin with an at sign,
+'@' (U+0040 COMMERCIAL AT), followed by an identifier and includes everything up
+to the next semicolon, ';' (U+003B SEMICOLON), or the next CSS block, whichever
+comes first...
+
+so The @keyframes CSS at-rule, controls the intermediate steps in a CSS
+animation sequence by defining styles for keyframes (or waypoints) along the
+animation sequence. This gives more control over the intermediate steps of the
+animation sequence than transitions."[2]
+************************************************************************************
+************************************************************************************
+The Shorthand Animation Property
+
+So instead of writing those properties separately, we can use which known as
+"shorthand" animation property. And all tese attributes can be written in a
+single line. Today we are going to use both ways.
+
+====================================================================================
+1. Animation Name
+====================================================================================
+
+The first property which I want to address is Animation-Name. As you can see
+here we have a bouncing ball, and if we open inspect element>style editor tab.
+Actually we have the same thing  on the page. And it's pretty straight forward,
+there are just names for our keyframes. So let's move on...
+
+====================================================================================
+2. Animation Duration
+====================================================================================
+
