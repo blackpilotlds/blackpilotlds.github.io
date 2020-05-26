@@ -83,6 +83,7 @@ my example I used 5 seconds delay for both of my keyframes.
 With an original css file that ball will loop its way Infinitely. But if we put
 specific number of repetition that will follow our guidance.
 
-For example lets put 4 repetitions for bounce and 1 repetition for moveLeft, and
+For example lets put 4 repetitions for a bounce and 1 repetition for a moveLeft, and
 see the difference.
 
+As you can see that after one long way, it stops on the left corner.
