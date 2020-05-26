@@ -52,7 +52,7 @@ So we have three seconds for the ball to go from the top, bottom, and back to
 the top. And we have 12 seconds for the ball to travel from left edge of the
 screen to the right.
 
-Let's put 1 second for bouncing and 4 seconds for the move.
+Let's put 1 second for bounce and 4 seconds for the moveLeft.
 
 And you can see the difference right away. Thanks.
 
@@ -64,13 +64,25 @@ Lest talk about Animation-Timing-Function.
 
 I'm not sure if you can see the difference, but I will try my best.
 
-I will apply ease-in-out value istead of linear for moveLeft animation.
+I will apply ease-in-out value istead of lInear for moveLeft animation.
 
-As we apply ease-in-out then we can see that angle for the Trajectory is getting
+As we apply ease-in-out then we can see that angle for the TrajEctory is getting
 smaller at the beginning and at the end.
 
 ====================================================================================
 4. Animation-Delay
 ====================================================================================
 
-With animation-delay we can delay our animation for a given period of time.
+With animation-delay we can delay our animation for a given period of time. In
+my example I used 5 seconds delay for both of my keyframes.
+
+====================================================================================
+5. Animation-Iteration-Count
+====================================================================================
+
+With an original css file that ball will loop its way Infinitely. But if we put
+specific number of repetition that will follow our guidance.
+
+For example lets put 4 repetitions for bounce and 1 repetition for moveLeft, and
+see the difference.
+
