@@ -30,7 +30,7 @@ The Shorthand Animation Property
 
 So instead of writing those properties separately, we can use which known as
 "shorthand" animation property. And all tese attributes can be written in a
-single line. Today we are going to use both ways.
+single line. Today we are going to see both.
 
 ====================================================================================
 1. Animation Name
@@ -38,10 +38,39 @@ single line. Today we are going to use both ways.
 
 The first property which I want to address is Animation-Name. As you can see
 here we have a bouncing ball, and if we open inspect element>style editor tab.
-Actually we have the same thing  on the page. And it's pretty straight forward,
-there are just names for our keyframes. So let's move on...
+Actually we have the same thing on the page. And it's pretty straight forward,
+these are just names for our keyframes. So let's move on...
 
 ====================================================================================
 2. Animation Duration
 ====================================================================================
 
+Here we can adjust timing for animiation-duration and see the difference. Ok,
+lest onpen inspect element>style editor tab and adjust it on the fly.
+
+So we have three seconds for the ball to go from the top, bottom, and back to
+the top. And we have 12 seconds for the ball to travel from left edge of the
+screen to the right.
+
+Let's put 1 second for bouncing and 4 seconds for the move.
+
+And you can see the difference right away. Thanks.
+
+====================================================================================
+3. Animation-Timing-Function
+====================================================================================
+
+Lest talk about Animation-Timing-Function.
+
+I'm not sure if you can see the difference, but I will try my best.
+
+I will apply ease-in-out value istead of linear for moveLeft animation.
+
+As we apply ease-in-out then we can see that angle for the Trajectory is getting
+smaller at the beginning and at the end.
+
+====================================================================================
+4. Animation-Delay
+====================================================================================
+
+With animation-delay we can delay our animation for a given period of time.
