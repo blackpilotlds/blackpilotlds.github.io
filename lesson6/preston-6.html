@@ -1,0 +1,229 @@
+<!-- #region COMPLETED -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>What Temperature</title>
+    <meta
+      name="description"
+      content="The Weather Site Project by Sergei
+    Aleinikov Spring 2020 WDD 230-10 Web Frontend Development I"
+    />
+    <!-- https://byui.instructure.com/courses/98418/pages/the-weather-site-project?module_item_id=10581160 -->
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="./css/small.css" rel="stylesheet" />
+    <link href="./css/medium.css" rel="stylesheet" />
+    <link href="./css/large.css" rel="stylesheet" />
+    <link href="./images/favicon.ico" rel="shortcut icon" />
+  </head>
+  <body>
+    <div id="saturdayBanner">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
+    <header>
+      <picture
+        ><img src="../lesson3/images/logo-in-white.svg" alt="logo in color"
+      /></picture>
+      <section class="headings">
+        <h1>What Temperature</h1>
+        <div class="motto">Lets find out together!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="weatherImageContainer">
+        <div class="weatherImage">
+          <picture>
+          <source
+            srcset="
+              ./images/LMS-labeled-set/958-150KB-wdd230_image_franklinOriginal.jpg
+            "
+            media="(min-width:30.5em) and (max-width:60.9em)"
+          />
+          <source
+          srcset="
+            ./images/LMS-labeled-set/960-150KB-wdd230_image_franklinOriginal.jpg
+          "
+          media="(min-width:61em)"
+        />
+          <img
+            src="./images/LMS-labeled-set/375-150KB-wdd230_image_franklinOriginal.jpg"
+            alt="test"
+          />
+        </picture>
+        </div>
+        <section class="weatherBanner">
+          <h3>Weather Summary</h3>
+          <table class="weatherBannerTable">
+            <tr>
+              <th>‎‎‎‏‏‎</th>
+              <th>‎‎‎‏‏‎</th>
+            </tr>
+            <tr>
+              <td>Currently:</td>
+              <td>Sunny</td>
+            </tr>
+            <tr>
+              <td>High:</td>
+              <td>76 &#176;F</td>
+            </tr>
+            <tr>
+              <td>Wind Chill:</td>
+              <td>&#176;F</td>
+            </tr>
+            <tr>
+              <td>Humidity:</td>
+              <td>69%</td>
+            </tr>
+            <tr>
+              <td>Wind Speed:</td>
+              <td>5 mph</td>
+            </tr>
+          </table>
+        </section>
+        <!-- https://video.byui.edu/media/t/0_0a1jxi26 BOOKMARK -->
+      </div>
+      <div class="fiveDayForecastContainer">
+        <h3>5 Day Forecast</h3>
+        <div class="fiveDayForecastFlex">
+          <div class="fiveDayForecastFlex-col">
+            <span class="fiveDayForecastFlex-head">Mon</span>
+            <img
+              src="./images/weather/01-clouds-and-sun.svg"
+              alt="clouds and sun"
+            /><br />
+            <h4>87&#176;F</h4>
+          </div>
+          <div class="fiveDayForecastFlex-col">
+            <span class="fiveDayForecastFlex-head">Tue</span>
+            <img src="./images/weather/02-wind.svg" alt="windy" /><br />
+            <h4>78&#176;F</h4>
+          </div>
+          <div class="fiveDayForecastFlex-col">
+            <span class="fiveDayForecastFlex-head">Wed</span>
+            <img src="./images/weather/03-sun.svg" alt="sunny" /><br />
+            <h4>89&#176;F</h4>
+          </div>
+          <div class="fiveDayForecastFlex-col">
+            <span class="fiveDayForecastFlex-head">Thu</span>
+            <img src="./images/weather/04-storm.svg" alt="stormy" /><br />
+            <h4>72&#176;F</h4>
+          </div>
+          <div class="fiveDayForecastFlex-col">
+            <span class="fiveDayForecastFlex-head">Fri</span>
+            <img src="./images/weather/05-rain.svg" alt="rainy" /><br />
+            <h4>75&#176;F</h4>
+          </div>
+        </div>
+      </div>
+      <!-- for banner js use 00H:43m:27s -->
+      <!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance -->
+      <div class="articleContainer">
+        <div class="article">
+          <img
+            src="./images/291-square-articleContainer.jpg"
+            alt="between sun and rain"
+          />
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p id="byWho">by Lorem, Ipsum.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            cumque porro, eius laborum maxime sequi tenetur ea libero? Possimus
+            deserunt corporis perferendis, facilis pariatur unde?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+            unde ab deserunt et iste. Ullam sapiente, sequi incidunt aut atque
+            unde hic. Deserunt, laboriosam ab?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+            totam maxime sed, vero adipisci est eligendi impedit! Ipsum corporis
+            doloribus similique adipisci voluptates ad deserunt.
+          </p>
+        </div>
+      </div>
+      <!-- It is OK to use filler language for the article at this point. -->
+      <!-- #endregion -->
+    </main>
+    <div>
+      <div class="contactContainer">
+        <div class="contact">
+          <section class="contactTxt">
+            <h3>What Temperature</h3>
+            <table>
+              <tr>
+                <th>&zwnj;</th>
+                <th>&zwnj;</th>
+              </tr>
+              <tr>
+                <td><i class="material-icons">room</i></td>
+                <td>30 N 1st E<br />Preston, ID 83263</td>
+              </tr>
+              <tr>
+                <td><i class="material-icons">phone</i></td>
+                <td>999.999.9999</td>
+              </tr>
+              <tr>
+                <td><i class="material-icons">alternate_email</i></td>
+                <td>hello@whatemps.com</td>
+              </tr>
+            </table>
+            <div class="icons">
+              <a href="https://www.fb.com"
+                ><img
+                  src="./images/icons/01-facebook.svg"
+                  alt="facebook link icon"
+              /></a>
+              <a href="https://www.pinterest.com"
+                ><img
+                  src="./images/icons/02-pinterest.svg"
+                  alt="pinterest link icon"
+              /></a>
+              <a href="https://www.twitter.com"
+                ><img
+                  src="./images/icons/03-twitter.svg"
+                  alt="twitter link icon"
+              /></a>
+              <a href="https://www.whatsapp.com"
+                ><img
+                  src="./images/icons/04-whatsapp.svg"
+                  alt="whatsapp link icon"
+              /></a>
+            </div>
+          </section>
+          <!-- &nbsp; -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9958.19769728187!2d-111.87848553629851!3d42.09483571653682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590276674896!5m2!1sen!2sus"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      &copy;What Temperature | Sergei Aleinikov
+      <br />
+      <div id="lastUpdated">
+        <script src="./js/todaysDate.js"></script>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/saturdayBanner.js"></script>
+  </body>
+</html>

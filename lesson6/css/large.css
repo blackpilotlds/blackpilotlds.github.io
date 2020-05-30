@@ -1,0 +1,65 @@
+@media only screen and (min-width: 61em) {
+  
+  /* body {
+    background-color: green;
+  } */
+  
+  .navigation {
+    font-size: 1.1em;
+  }
+
+  header {
+    font-size: 1.1em;
+  }
+
+  header img {
+    width: 85px;
+  }
+
+  .motto {
+    font-size: 1.1em;
+  }
+
+  main {
+    font-size: 1.1em;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+
+  .article {
+    padding: 1em 1em 1em 1em;
+  }
+
+  .article img {
+    width: 250px;
+  }
+
+
+  iframe {
+    width: 680px;
+    height: 210px;
+  }
+
+  .icons img {
+    width: 45px;
+  }
+
+  .contactContainer {
+    border-radius: 20px 20px 0 0;
+  }
+
+  footer {
+      font-size: 1em;
+  }
+
+  /* .fiveDayForecastContainer {
+    width: 820px;
+  } */
+
+  .fiveDayForecastFlex {
+    font-size: 1.2em;
+  }
+
+}
