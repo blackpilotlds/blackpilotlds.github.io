@@ -254,21 +254,23 @@ table {
   flex-direction: column;
 }
 
-iframe {
-  margin-left: 1em;
-  width: 140px;
-  height: 110px;
-  border: 2px solid black;
-}
-
 i img {
   /* color: #660000; */
-  width: 25px;
+  width: 19px;
 }
 
 .icons img {
   width: 20px;
   margin-top: 1em;
+}
+
+.map {
+max-width: 140px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
 }
 
 /* #endregion */

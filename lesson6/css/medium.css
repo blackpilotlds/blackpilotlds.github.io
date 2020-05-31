@@ -119,11 +119,6 @@
     width: 200px;
   }
 
-  iframe {
-    width: 680px;
-    height: 190px;
-  }
-
   .icons img {
     width: 40px;
   }
@@ -131,4 +126,13 @@
   footer {
     font-size: .9em;
 }
+
+i img {
+  /* color: #660000; */
+  width: 25px;
+}
+
+.map {
+  max-width: 680px;
+  }
 }
