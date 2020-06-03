@@ -17,16 +17,19 @@
     <link href="./css/small.css" rel="stylesheet" />
   </head>
   <body>
-      <h1>TEST</h1>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <h1>
+      W07 Activity: Progressive Loading of Images
+    </h1>
+    <img src="./images/placeholder.jpg" data-src="./images/real1.jpg" alt="first example image" /><br>
+    <img src="./images/placeholder.jpg" data-src="./images/real2.jpg" alt="second example image" /><br>
+    <img src="./images/placeholder.jpg" data-src="./images/real3.jpg" alt="third example image" /><br>
+    <img src="./images/placeholder.jpg" data-src="./images/real4.jpg" alt="fourth example image" /><br>
+    <img src="./images/placeholder.jpg" data-src="./images/real5.jpg" alt="fifth example image" /><br>
+    <img src="./images/placeholder.jpg" data-src="./images/real6.jpg" alt="sixth example image" /><br>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.28/webfont.js"></script>
     <script>
       WebFont.load({ google: { families: ["Ubuntu", "Ubuntu Condensed"] } });
     </script>
+    <script src="./js/lazyLoad.js"></script>
   </body>
 </html>
