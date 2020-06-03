@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Oswald:wght@700&display=swap");
+
+:root {
+  --first: black;
+  --second: red;
+  --background1: #cccccc; /*80%*/
+  --background2: #e5e5e5; /*90%*/
+  --main: "Oswald", sans-serif;
+  --mainSecond: "ABeeZee", sans-serif;
+}
+
+/* #region  BODYHEADER */
+
+body {
+  font-size: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: var(--mainSecond);
+}
