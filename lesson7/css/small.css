@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Oswald:wght@700&display=swap");
+
+/* 
+https://material.io/resources/icons/?icon=room&style=baseline
+http://google.github.io/material-design-icons/ 
+*/
+
+:root {
+  --first: black;
+  --second: red;
+  --background1: #cccccc; /*80%*/
+  --background2: #e5e5e5; /*90%*/
+  --main: "Oswald", sans-serif;
+  --mainSecond: "ABeeZee", sans-serif;
+}
+
+/* #region  BODYHEADER */
+
+body {
+  font-size: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  /* padding: 0em 1em 0em 1em; */
+  font-family: var(--mainSecond);
+  background-color: #181a1b;
+}
+
+#saturdayBanner {
+  display: none;
+  color: black;
+  background-color: yellow;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  margin: 0 0 0 20px;
+}
+
+.motto {
+  /* font-style: italic; */
+  letter-spacing: 1pt;
+  color: red;
+  margin-left: 25px;
+  font-size: 0.6rem;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: var(--background1);
+}
+
+.navigation {
+  list-style: none;
+  padding: 0em;
+  margin-top: 0em;
+  font-size: 1em;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: black;
+}
+
+.navigation .active {
+  background-color: black;
+  color: white;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+
+.responsive li {
+  display: block;
+}
+
+/* #endregion */
+/* #region  MAIN */
+
+main {
+  font-size: 0.9em;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  color: white;
+  margin-top: 0em;
+}
+
+.weatherImageContainer {
+  position: relative;
+  margin: 10px auto;
+  width: 320px;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.weatherImage {
+  margin: 10px auto;
+}
+
+.weatherImage img {
+  width: 100%;
+  height: auto;
+}
+
+.weatherBanner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* background: rgba(10, 105, 10, 0.75); */
+  background-color: rgb(255, 0, 0, 0.75);
+  padding: 0.5em;
+}
+
+.weatherBanner h3,
+table {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: white;
+}
+
+.weatherBanner h3{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.weatherBannerTable tr td:nth-child(1) {
+  text-align: right;
+  padding-right: 0.1em;
+  vertical-align: text-top;
+  color: white;
+}
+
+.weatherBannerTable tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 0.1em;
+  color: yellow;
+  font-weight: bolder;
+}
+
+.fiveDayForecastContainer {
+  display: none;
+}
+
+.fiveDayForecastFlex {
+  display: none;
+}
+
+.fiveDayForecastFlex img {
+  width: 50px;
+  filter: invert(1);
+  margin: 1em 0 0em 0;
+}
+
+.articleContainer {
+  margin: 0 auto;
+  background-color: var(--background2);
+  width: 320px;
+}
+
+.article {
+  padding: 2em 1em 1em 1em;
+}
+
+.article h3 {
+  color: black;
+}
+
+#byWho {
+  font-style: italic;
+  color: darkslategray;
+  font-size: 0.8em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.article img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 10px black;
+  width: 280px;
+  height: auto;
+  border: 1px solid #bbb;
+  padding: 0.25rem;
+}
+
+.contactContainer {
+  margin: 0 auto;
+  background-color: var(--background1);
+  width: 100%;
+  margin-top: 1em;
+}
+
+.contact {
+  padding: 1em 1em 1em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h3,
+table {
+  margin-bottom: 0em;
+  color: black;
+}
+
+.contactTxt {
+  display: flex;
+  flex-direction: column;
+}
+
+i img {
+  /* color: #660000; */
+  width: 19px;
+}
+
+.icons img {
+  width: 20px;
+  margin-top: 1em;
+}
+
+.map {
+max-width: 140px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+/* #endregion */
+/* #region  FOOTER */
+footer {
+  background-color: var(--first);
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 1em;
+}
+/* #endregion */
