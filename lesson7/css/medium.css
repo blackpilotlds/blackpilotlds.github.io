@@ -42,8 +42,14 @@
 
   main {
     font-size: 1em;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .mainDivContainer {
     max-width: 920px;
     margin: 0 auto;
+
   }
 
   footer {

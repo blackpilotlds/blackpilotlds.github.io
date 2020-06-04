@@ -24,6 +24,10 @@
     font-size: 1.1em;
   }
 
+  main .contactContainer {
+    max-width: 960px;
+  }
+
   footer {
     font-size: 1em;
   }
