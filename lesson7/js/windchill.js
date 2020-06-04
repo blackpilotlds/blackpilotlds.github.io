@@ -31,7 +31,7 @@ var s = document.getElementById('speed').textContent;
 // temperatures at or below 10 °C (50 °F) and wind speeds above 4.8 kilometers
 // per hour (3.0 mph)."
 
-if ( t <=50 && s >=3 ) {
+if ( t <=50 && s >3 ) {
     var ttp     = Math.pow(s,0.16);
     var formula = 35.74 + 0.6215 * t - 35.75 * ttp + 0.4275 * t * ttp;
     var answer  = formula.toFixed(0);
