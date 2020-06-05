@@ -121,6 +121,26 @@ main {
   font-size: 0.9em;
 }
 
+.mainDivContainer {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.mainDivContainerGalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,300px));
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.mainDivContainerGalleryGrid img[data-src] {
+	filter: blur(0.2em);
+}
+.mainDivContainerGalleryGrid img {
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
+
 h2 {
   text-align: center;
   color: white;
