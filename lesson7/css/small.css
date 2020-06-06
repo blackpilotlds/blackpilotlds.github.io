@@ -128,17 +128,31 @@ main {
 
 .mainDivContainerGalleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,300px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   justify-content: center;
   grid-gap: 10px;
 }
 
 .mainDivContainerGalleryGrid img[data-src] {
-	filter: blur(0.2em);
+  filter: blur(0.2em);
 }
 .mainDivContainerGalleryGrid img {
-	filter: blur(0em);
-	transition: filter 0.5s;
+  filter: blur(0em);
+  transition: filter 0.5s;
+  width: 100%;
+  height: auto;
+}
+
+.shadowBox {
+  background-color: white;
+  text-align: center;
+  font-size: .85em;
+  border: 1px solid white;
+}
+
+.shadow:hover {
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  border: 1px solid black;
 }
 
 h2 {
@@ -184,7 +198,7 @@ table {
   color: white;
 }
 
-.weatherBanner h3{
+.weatherBanner h3 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
@@ -285,7 +299,7 @@ i img {
 }
 
 .map {
-max-width: 140px;
+  max-width: 140px;
 }
 
 .map img {
