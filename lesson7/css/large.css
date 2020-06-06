@@ -24,6 +24,12 @@
     font-size: 1.1em;
   }
 
+  .shadow:hover {
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    border: 1px solid black;
+  }
+  
+
   main .contactContainer {
     max-width: 960px;
   }
