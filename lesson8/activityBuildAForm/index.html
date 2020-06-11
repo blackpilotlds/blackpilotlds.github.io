@@ -40,17 +40,48 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label>First Name* <input type="text" name="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label>Website <input type="url" name="url" placeholder="http://" required></label>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website <input type="url" name="url" placeholder="http://" required></label>
             </fieldset>
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audience</div>
-                <input type="radio" name="audiencce">
+                <label class="sbs"> <input type="radio" name="audiencce" value="beginner"> Beginner</label>
+                <label class="sbs"> <input type="radio" name="audiencce" value="intermediate"> Intermediate</label>
+                <label class="sbs"> <input type="radio" name="audiencce" value="advanced"> Advanced</label>
+                <!-- with the same name I can click only one of three
+                when names different then I can click independently each one -->
+
+                <div>Software Needed</div>
+                <label class="sbs"> <input type="checkbox" name="editing" value="yes"> Photo editing</label>
+                <label class="sbs"> <input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"> <input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"> <input type="checkbox" name="client" value="yes"> FTP Client</label>
             </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Competion Date <input type="date" name="complitionDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Contruction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="security">Cyber Security</option>
+                    </select>
+                </label>
+
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+
+            </fieldset>
+            <input type="submit" value="Propose My Course" class="submitBtn">
         </form>
     </main>
     <!-- FOOTER HERE -->
@@ -61,6 +92,3 @@
 </body>
 
 </html>
-
-<!-- BOOKMARK 7:16 to 11:57 -->
-<!-- https://video.byui.edu/media/Web+Forms+C/0_3h97cgsf -->
