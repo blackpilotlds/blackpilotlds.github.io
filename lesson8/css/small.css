@@ -126,6 +126,12 @@ main {
   margin: 0 auto;
 }
 
+.mainDivContainer p {
+  color: white;
+  padding: 0 1em;
+  text-align: center;
+}
+
 .mainDivContainerGalleryGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
@@ -351,7 +357,9 @@ form div {
 }
 
 form label.top input,
-form label.top select {
+form label.top select,
+textarea
+ {
   -webkit-appearance: none;
   display: block;
   font-size: 1em;
@@ -388,5 +396,6 @@ form label.top input:required {
 form label.top input:required:valid {
   border-left: green solid 6px;
 }
+
 
 /* #endregion */
