@@ -55,6 +55,7 @@
                 <fieldset>
                     <legend>Storm Report</legend>
                     <label class="top">Storm Date: <input type="date" name="complitionDate"></label>
+                    <!-- BOOKMARK ERROR 1 -->
                     <label class="top" for="stormType">Choose Storm Type From the List:
                         <datalist id="stormType">
                             <option value="Flash Flood">
@@ -63,10 +64,15 @@
                             <option value="Thunderstorm">
                             <option value="Tornado">
                         </datalist>
-                        <input list="stormType" name="stormType" id="stormType"></label>
+                        <!-- <input list="stormType" name="stormType" id="stormType"></label> -->
+                        <input list="stormType" name="stormType"></label>
+                    <!-- BOOKMARK ERROR 2 -->
                     <label class="top" for="rating">Storm Severity: <span id="ratingvalue">5</span><br>
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        <!-- <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> -->
+                        <input type="range" id="rating" value="0" min="1" max="10" step="1"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <!-- BOOKMARK ERROR 3 -->
                     </label>
                     <label class="top">Storm Region:
                         <select name="stormRegion">
@@ -80,7 +86,8 @@
                     <label class="sbs"> <input type="radio" name="user-in-danger-level" value="yes"> Yes</label>
                     <label class="sbs"> <input type="radio" name="user-in-danger-level" value="maybe"> Maybe</label>
                     <label class="sbs"> <input type="radio" name="user-in-danger-level" value="no"> No</label>
-                    <label class="top">Additional Information or Comments<br><textarea name="extraInformation"></textarea></label>
+                    <label class="top">Additional Information or Comments<br><textarea
+                            name="extraInformation"></textarea></label>
                     <!-- with the same name I can click only one of three
                     when names different then I can click independently each one -->
                 </fieldset>
