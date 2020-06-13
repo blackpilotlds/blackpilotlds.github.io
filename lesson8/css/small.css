@@ -351,7 +351,7 @@ form label.top,
 form div {
   display: block;
   padding-top: 1em;
-  color: black;
+  color: #660000ff;
   font-size: 0.8em;
 }
 
@@ -379,7 +379,7 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: red;
+  background-color: #660000ff;
   color: white;
   border-radius: 1em;
   padding: 0.75em 1.5em;
