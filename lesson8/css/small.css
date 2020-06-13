@@ -340,10 +340,10 @@ form fieldset {
 }
 
 form legend {
-  color: black;
+  color: white;
   margin: 0 1em;
   padding: 0.2em 1em;
-  background-color: var(--background1);
+  background-color: #660000ff;
   border-radius: 4px;
 }
 
