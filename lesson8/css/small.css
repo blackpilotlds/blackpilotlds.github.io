@@ -146,7 +146,7 @@ main {
 .shadowBox {
   background-color: white;
   text-align: center;
-  font-size: .85em;
+  font-size: 0.85em;
   border: 1px solid white;
 }
 
@@ -282,7 +282,7 @@ table {
   display: flex;
   flex-direction: column;
   padding: 0 1em;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 i img {
@@ -305,7 +305,7 @@ i img {
 
 .map {
   max-width: 140px;
-  padding: 0 .1em;
+  padding: 0 0.1em;
 }
 
 .map img {
@@ -322,4 +322,71 @@ footer {
   text-align: center;
   padding: 1em;
 }
+/* #endregion */
+
+/* #region  FORM */
+
+form fieldset {
+  margin: 2em 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5em 2%;
+  background-color: var(--background2);
+}
+
+form legend {
+  color: black;
+  margin: 0 1em;
+  padding: 0.2em 1em;
+  background-color: var(--background1);
+  border-radius: 4px;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1em;
+  color: #9c2c13;
+  font-size: 0.8em;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1em;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75em;
+  color: #555;
+  width: 100%;
+  max-width: 20em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75em 0; /*левая цифра это верх и низ, а правая цифра это бока*/
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1em;
+  padding: 0.75em 1.5em;
+  margin: 0 0 2em 2%;
+  width: 96%;
+  max-width: 20em;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
 /* #endregion */

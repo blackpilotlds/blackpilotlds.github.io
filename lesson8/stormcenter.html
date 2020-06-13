@@ -42,107 +42,69 @@
     </nav>
     <main>
         <div class="mainDivContainer">
-            <h2>Preston Idaho</h2>
-            <div class="weatherImageContainer">
-                <div class="weatherImage">
-                    <picture>
-                        <source srcset="
-                ./images/LMS-labeled-set/958-150KB-wdd230_image_franklinOriginal.jpg
-              " media="(min-width:30.5em) and (max-width:60.9em)" />
-                        <source srcset="
-                ./images/LMS-labeled-set/960-150KB-wdd230_image_franklinOriginal.jpg
-              " media="(min-width:61em)" />
-                        <img src="./images/LMS-labeled-set/375-150KB-wdd230_image_franklinOriginal.jpg" alt="test" />
-                    </picture>
-                </div>
-                <section class="weatherBanner">
-                    <h3>Weather Summary</h3>
-                    <table class="weatherBannerTable">
-                        <tr>
-                            <th>‎‎‎‏‏‎</th>
-                            <th>‎‎‎‏‏‎</th>
-                        </tr>
-                        <tr>
-                            <td>Currently:</td>
-                            <td>Sunny</td>
-                        </tr>
-                        <tr>
-                            <td>High:</td>
-                            <td><span id="temp">76</span>&#176;F</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Chill:</td>
-                            <td><span id="windChill"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Humidity:</td>
-                            <td>69%</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Speed:</td>
-                            <td><span id="speed">5</span> mph</td>
-                        </tr>
-                    </table>
-                </section>
-                <!-- https://video.byui.edu/media/t/0_0a1jxi26 BOOKMARK -->
-            </div>
-            <div class="fiveDayForecastContainer">
-                <h3>5 Day Forecast</h3>
-                <div class="fiveDayForecastFlex">
-                    <div class="fiveDayForecastFlex-col">
-                        <span class="fiveDayForecastFlex-head">Mon</span>
-                        <img src="./images/weather/01-clouds-and-sun.svg" alt="clouds and sun" /><br />
-                        <h4>87&#176;F</h4>
-                    </div>
-                    <div class="fiveDayForecastFlex-col">
-                        <span class="fiveDayForecastFlex-head">Tue</span>
-                        <img src="./images/weather/02-wind.svg" alt="windy" /><br />
-                        <h4>78&#176;F</h4>
-                    </div>
-                    <div class="fiveDayForecastFlex-col">
-                        <span class="fiveDayForecastFlex-head">Wed</span>
-                        <img src="./images/weather/03-sun.svg" alt="sunny" /><br />
-                        <h4>89&#176;F</h4>
-                    </div>
-                    <div class="fiveDayForecastFlex-col">
-                        <span class="fiveDayForecastFlex-head">Thu</span>
-                        <img src="./images/weather/04-storm.svg" alt="stormy" /><br />
-                        <h4>72&#176;F</h4>
-                    </div>
-                    <div class="fiveDayForecastFlex-col">
-                        <span class="fiveDayForecastFlex-head">Fri</span>
-                        <img src="./images/weather/05-rain.svg" alt="rainy" /><br />
-                        <h4>75&#176;F</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- for banner js use 00H:43m:27s -->
-            <!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance -->
-            <div class="articleContainer">
-                <div class="article">
-                    <img src="./images/291-square-articleContainer.jpg" alt="between sun and rain" />
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p id="byWho">by Lorem, Ipsum.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-                        cumque porro, eius laborum maxime sequi tenetur ea libero? Possimus
-                        deserunt corporis perferendis, facilis pariatur unde?
-                    </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-                        unde ab deserunt et iste. Ullam sapiente, sequi incidunt aut atque
-                        unde hic. Deserunt, laboriosam ab?
-                    </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
-                        totam maxime sed, vero adipisci est eligendi impedit! Ipsum corporis
-                        doloribus similique adipisci voluptates ad deserunt.
-                    </p>
-                </div>
-            </div>
+            <h2>Course Proposal Application</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Your Name Goes Here</legend>
+                    <label class="top">First Name* <input type="text" minlength="5" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="your@email.please"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" placeholder="12345" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Report</legend>
+                    <label class="top">Storm Date <input type="date" name="complitionDate"></label>
+                    <label class="top" for="stormType">Choose storm type from the list:</label>
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <input list="stormType" name="stormType" id="stormType">
+                    <label class="top flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <label class="sbs"> <input type="radio" name="audiencce" value="beginner"> Beginner</label>
+                    <label class="sbs"> <input type="radio" name="audiencce" value="intermediate"> Intermediate</label>
+                    <label class="sbs"> <input type="radio" name="audiencce" value="advanced"> Advanced</label>
+                    <!-- with the same name I can click only one of three
+                    when names different then I can click independently each one -->
+
+                    <div>Software Needed</div>
+                    <label class="sbs"> <input type="checkbox" name="editing" value="yes"> Photo editing</label>
+                    <label class="sbs"> <input type="checkbox" name="code" value="yes"> Coding</label>
+                    <label class="sbs"> <input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                    <label class="sbs"> <input type="checkbox" name="client" value="yes"> FTP Client</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Funding</legend>
+                    <label class="top">Anticipated Competion Date <input type="date" name="complitionDate"></label>
+                    <label class="top">Course Subject
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="software">Software Development</option>
+                            <option value="creative">Creative Professional</option>
+                            <option value="info">Information Technology</option>
+                            <option value="data">Data Professional</option>
+                            <option value="construction">Contruction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="business">Business Professional</option>
+                            <option value="security">Cyber Security</option>
+                        </select>
+                    </label>
+
+                    <label class="top">How Many Authors <input type="number" name="authors"></label>
+
+                </fieldset>
+                <input type="submit" value="Propose My Course" class="submitBtn">
+            </form>
+
         </div>
-        <!-- It is OK to use filler language for the article at this point. -->
-        <!-- #endregion -->
     </main>
     <div>
         <div class="contactContainer">
@@ -207,6 +169,7 @@
     <script>
         WebFont.load({ google: { families: ["Oswald", "ABeeZee"] } });
     </script>
+    <script src="./js/ratingValue.js"></script>
 </body>
 
 </html>
