@@ -22,17 +22,6 @@ tbody tr:nth-child(even) {
   background: var(--row1);
 }
 
-/* tbody tr:nth-child(odd) {
-  background: var(--row2);
-} */
-
-tbody tr:nth-child(1) {
-  background: var(--heading);
-  color: white;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
 table td {
   padding: 0.3em 0.5em 0.3em 0.5em;
 }
@@ -69,6 +58,9 @@ tfoot td {
   padding: 0.6em 0.6em 0.6em 0.6em;
 }
 
-/* .headingFooter {
-    background-color: var(--background);
-} */
+tbody th{
+  background: var(--heading);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
