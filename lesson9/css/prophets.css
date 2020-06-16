@@ -62,14 +62,14 @@ section img {
 }
 
 footer {
-    background-color: #B9B9CC;
+    /* background-color: #B9B9CC; */
     color: #4D4D96;
     font-family: 'Arial', serif;
     padding: 1em;
     margin: 1em auto;
 }
 
-.temporaryImages {
+/* .temporaryImages {
     max-width: 300px;
 }
 
@@ -79,4 +79,4 @@ footer {
 
 .temporaryImages img:nth-child(2) {
     width: 100%;
-}
+} */
