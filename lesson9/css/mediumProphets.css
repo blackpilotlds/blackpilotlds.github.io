@@ -1,0 +1,13 @@
+@media only screen and (min-width: 30.5em) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
