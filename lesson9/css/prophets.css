@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+}
+
+body section,h1,p {
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.cards section{
+
+}
+
+.temporaryImages {
+    max-width: 300px;
+}
+
+.temporaryImages img:nth-child(1) {
+    width: 400%;
+}
+
+.temporaryImages img:nth-child(2) {
+    width: 100%;
+}
