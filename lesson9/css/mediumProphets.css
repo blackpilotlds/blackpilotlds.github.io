@@ -1,6 +1,6 @@
 @media only screen and (min-width: 668px) {
   .cards {
-    grid-template-columns: 385px 385px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   h1 {
