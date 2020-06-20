@@ -1,9 +1,8 @@
 @media only screen and (min-width: 61em) {
-  
   /* body {
     background-color: green;
   } */
-  
+
   .navigation {
     font-size: 1.1em;
   }
@@ -28,7 +27,6 @@
     box-shadow: 0 0 50px rgb(255, 255, 255);
     border: 1px solid black;
   }
-  
 
   main .contactContainer {
     max-width: 960px;
@@ -55,7 +53,7 @@
   }
 
   footer {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   /* .fiveDayForecastContainer {
@@ -66,4 +64,28 @@
     font-size: 1.2em;
   }
 
+  /* #region  HOMEPAGE */
+
+  .townData {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  }
+  
+  .townData div {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .townData div div {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .townData div img{
+    width: 100%;
+  }
+
+  /* #endregion */
 }
