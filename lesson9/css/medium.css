@@ -1,8 +1,4 @@
 @media only screen and (min-width: 30.5em) {
-  /* body {
-    background-color: yellowgreen;
-  } */
-
   .navigation {
     display: flex;
     font-size: 1em;
@@ -126,7 +122,6 @@
   .contactTxt {
     font-size: 1.1rem;
   }
-  
 
   footer {
     font-size: 0.9em;
@@ -140,4 +135,28 @@
   .map {
     max-width: 680px;
   }
+
+  /* #region  HOMEPAGE */
+
+  .townData div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .townData div:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+  .townData div div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .townData div img {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  /* #endregion */
 }
