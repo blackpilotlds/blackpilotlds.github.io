@@ -20,22 +20,21 @@ fetch(requestURL)
             let townRain = document.createElement('p');
             let image = document.createElement('img');
 
+                townName.innerHTML = `${town.name}`;
+                townMotto.innerHTML = `${town.motto}`;
+                townYear.innerHTML = `Year Founded: ${town.yearFounded}`;
+                townPopulation.innerHTML = `Population: ${town.currentPopulation}`;
+                townRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
 
-            townName.innerHTML = `${town.name}`;
-            townMotto.innerHTML = `${town.motto}`;
-            townYear.innerHTML = `Year Founded: ${town.yearFounded}`;
-            townPopulation.innerHTML = `Population: ${town.currentPopulation}`;
-            townRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
-
-            card.appendChild(townData)
-            townData.appendChild(townName);
-            townData.appendChild(townMotto);
-            townData.appendChild(townYear);
-            townData.appendChild(townPopulation);
-            townData.appendChild(townRain);
-            image.setAttribute('src', `images/${town.photo}`);
-            image.setAttribute('alt', `${town.name}: ${town.motto}`);
-            card.appendChild(image);
+                    card.appendChild(townData)
+                    townData.appendChild(townName);
+                    townData.appendChild(townMotto);
+                    townData.appendChild(townYear);
+                    townData.appendChild(townPopulation);
+                    townData.appendChild(townRain);
+                    image.setAttribute('src', `./images/homepage/${town.photo}`);
+                    image.setAttribute('alt', `${town.name}: ${town.motto}`);
+                    card.appendChild(image);
 
             document.querySelector('div.townData').appendChild(card);
         });

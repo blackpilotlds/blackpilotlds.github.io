@@ -419,3 +419,30 @@ form label.top input:required:valid {
   padding: 1em 1em;
 }
 /* #endregion */
+/* #region  HOMEPAGE */
+.townData {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.townData h2,
+h3,
+p {
+  color: black;
+}
+
+.townData div {
+  background-color: var(--background2);
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.townData img {
+  width: auto;
+  box-shadow: 0 0 1em;
+  border: 5px white;
+  border-style: solid;
+}
+/* #endregion */
