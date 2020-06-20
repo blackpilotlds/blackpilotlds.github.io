@@ -432,6 +432,10 @@ p {
   color: black;
 }
 
+.townData h2 {
+  border-bottom: 1px solid red;
+}
+
 .townData p {
   margin: 0em 0em;
 }
@@ -444,7 +448,9 @@ p {
 }
 
 .townData img {
-  width: auto;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
