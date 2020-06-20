@@ -358,8 +358,7 @@ form div {
 
 form label.top input,
 form label.top select,
-textarea
- {
+textarea {
   -webkit-appearance: none;
   display: block;
   font-size: 1em;
@@ -394,7 +393,6 @@ input[type="submit"]:hover {
   background-color: white;
 }
 
-
 form label.top input:required {
   border-left: #660000ff solid 6px;
 }
@@ -403,5 +401,21 @@ form label.top input:required:valid {
   border-left: green solid 6px;
 }
 
+/* #endregion */
+/* #region  FRAMES */
+.wireFrames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.wireFrames img:nth-of-type(1) {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.wireFrames img {
+  width: 100%;
+  padding: 1em 1em;
+}
 /* #endregion */

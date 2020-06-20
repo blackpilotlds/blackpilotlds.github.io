@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
     .then(function (response) {
@@ -6,26 +6,37 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         // console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const prophets = jsonObject['prophets'];
-        for (let i = 0; i < prophets.length; i++) {
-            let card = document.createElement('section');
-            let h2 = document.createElement('h2');
-            let bDate = document.createElement('p');
-            let bPlace = document.createElement('p');
+        const towns = jsonObject['towns'];
+        const myTowns = towns.filter(town => (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'));
+
+        myTowns.forEach(town => {
+
+            let card = document.createElement('div');
+            let townData = document.createElement('div');
+            let townName = document.createElement('h2');
+            let townMotto = document.createElement('h3');
+            let townYear = document.createElement('p');
+            let townPopulation = document.createElement('p');
+            let townRain = document.createElement('p');
             let image = document.createElement('img');
 
-                h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-                bDate.textContent = 'Date of Birth: ' + prophets[i].birthdate;
-                bPlace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
-                image.setAttribute('src', prophets[i].imageurl);
-                image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order);
 
-                    card.appendChild(h2);
-                    card.appendChild(bDate);
-                    card.appendChild(bPlace);
-                    card.appendChild(image);
+            townName.innerHTML = `${town.name}`;
+            townMotto.innerHTML = `${town.motto}`;
+            townYear.innerHTML = `Year Founded: ${town.yearFounded}`;
+            townPopulation.innerHTML = `Population: ${town.currentPopulation}`;
+            townRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
 
-                        document.querySelector('div.cards').appendChild(card);
-        }
+            card.appendChild(townData)
+            townData.appendChild(townName);
+            townData.appendChild(townMotto);
+            townData.appendChild(townYear);
+            townData.appendChild(townPopulation);
+            townData.appendChild(townRain);
+            image.setAttribute('src', `images/${town.photo}`);
+            image.setAttribute('alt', `${town.name}: ${town.motto}`);
+            card.appendChild(image);
+
+            document.querySelector('div.townData').appendChild(card);
+        });
     });
-
