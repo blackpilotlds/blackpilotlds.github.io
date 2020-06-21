@@ -455,4 +455,26 @@ p {
   border: 5px white;
   border-style: solid;
 }
+
+.homeArticle {
+  margin: 0 auto;
+  background-color: var(--background2);
+  padding: 1em 1em;
+  margin-bottom: 1em;
+}
+
+.homeArticle h3,p {
+  margin-bottom: 0;
+}
+
+.homeArticle img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border: 1px black;
+  border-style: solid;
+  margin-bottom: 1em;
+}
+
+
 /* #endregion */
