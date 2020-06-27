@@ -230,10 +230,18 @@ table {
   display: none;
 }
 
+.fiveDayForecastFlex-head {
+  font-size: 1.2em;
+}
+
 .fiveDayForecastFlex img {
-  width: 50px;
-  filter: invert(1);
-  margin: 1em 0 0em 0;
+  width: 100px;
+  filter: invert(0);
+  margin: 0 0;
+}
+
+.fiveDayForecastFlex h4 {
+  margin-top: 0;
 }
 
 .articleContainer {
@@ -467,7 +475,8 @@ p {
   margin-bottom: 1em;
 }
 
-.homeArticle h3,p {
+.homeArticle h3,
+p {
   margin-bottom: 0;
 }
 
@@ -479,6 +488,5 @@ p {
   border-style: solid;
   margin-bottom: 1em;
 }
-
 
 /* #endregion */
