@@ -8,22 +8,19 @@ fetch(apiURL)
         document.getElementById('HUM').textContent = jsObject.list[0].main.humidity;
         document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
 
-        const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
+            const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
+            // console.log(fiveDayForecast);
+            const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-        console.log(fiveDayForecast);
-
-        const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-        let days = 0;
-        fiveDayForecast.forEach(forecast => {
-            let d = new Date(forecast.dt_txt);
-            document.getElementById(`temp${days+ 1}`).innerHTML = `${forecast.main.temp.toFixed(0)}`;
-            document.getElementById(`day${days+ 1}`).textContent = week[d.getDay()];
-            const imagesrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
-            const desc = forecast.weather[0].description;
-            document.getElementById(`icon${days+ 1}`).setAttribute('src', imagesrc);
-            document.getElementById(`icon${days+ 1}`).setAttribute('alt', desc);
-            days++;
-        });
-
+                let days = 0;
+                fiveDayForecast.forEach(forecast => {
+                    let d = new Date(forecast.dt_txt);
+                    document.getElementById(`temp${days+ 1}`).innerHTML = `${forecast.main.temp.toFixed(0)}`;
+                    document.getElementById(`day${days+ 1}`).textContent = week[d.getDay()];
+                        const imagesrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
+                        const desc = forecast.weather[0].description;
+                        document.getElementById(`icon${days+ 1}`).setAttribute('src', imagesrc);
+                        document.getElementById(`icon${days+ 1}`).setAttribute('alt', desc);
+                    days++;
+                });
     });
