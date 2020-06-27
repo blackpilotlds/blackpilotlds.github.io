@@ -1,12 +1,23 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=756a0fad857ea7b6497b499e83b10f9d&units=imperial';
-fetch(apiURL)
+const apiUrlWeather = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=756a0fad857ea7b6497b499e83b10f9d&units=imperial';
+fetch(apiUrlWeather)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        document.getElementById('aboutWeather').textContent = jsObject.weather[0].main;
+        document.getElementById('currentTemp').textContent = jsObject.main.temp;
+        document.getElementById('HUM').textContent = jsObject.main.humidity;
+        document.getElementById('speed').textContent = jsObject.wind.speed;
+    }); 
+
+const apiUrlForecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=756a0fad857ea7b6497b499e83b10f9d&units=imperial';
+fetch(apiUrlForecast)
     .then((response) => response.json())
     .then((jsObject) => {
         // console.log(jsObject);
-        document.getElementById('aboutWeather').textContent = jsObject.list[0].weather[0].main;
-        document.getElementById('currentTemp').textContent = jsObject.list[0].main.temp;
-        document.getElementById('HUM').textContent = jsObject.list[0].main.humidity;
-        document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
+        // document.getElementById('aboutWeather').textContent = jsObject.list[0].weather[0].main;
+        // document.getElementById('currentTemp').textContent = jsObject.list[0].main.temp;
+        // document.getElementById('HUM').textContent = jsObject.list[0].main.humidity;
+        // document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
 
             const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
             // console.log(fiveDayForecast);
