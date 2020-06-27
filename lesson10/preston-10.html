@@ -47,12 +47,12 @@
         <div class="weatherImage">
           <picture>
             <source srcset="
-                ./images/LMS-labeled-set/958-150KB-wdd230_image_franklinOriginal.jpg
+                ./images/LMS-labeled-set/myOwn/958-original_green.jpg
               " media="(min-width:30.5em) and (max-width:60.9em)" />
             <source srcset="
-                ./images/LMS-labeled-set/960-150KB-wdd230_image_franklinOriginal.jpg
+                ./images/LMS-labeled-set/myOwn/960-original_green.jpg
               " media="(min-width:61em)" />
-            <img src="./images/LMS-labeled-set/375-150KB-wdd230_image_franklinOriginal.jpg" alt="test" />
+            <img src="./images/LMS-labeled-set/myOwn/375-original_green.jpg" alt="green trees small viewport" />
           </picture>
         </div>
         <section class="weatherBanner">
@@ -64,11 +64,12 @@
             </tr>
             <tr>
               <td>Currently:</td>
-              <td>Sunny</td>
+              <!-- <td><span id="aboutWeather"></span></td> -->
+              <td id="aboutWeather"></td>
             </tr>
             <tr>
-              <td>High:</td>
-              <td><span id="temp">76</span>&#176;F</td>
+              <td>Temperature:</td>
+              <td><span id="currentTemp"></span>&#176; F</td>
             </tr>
             <tr>
               <td>Wind Chill:</td>
@@ -76,43 +77,42 @@
             </tr>
             <tr>
               <td>Humidity:</td>
-              <td>69%</td>
+              <td><span id="HUM"></span></td>
             </tr>
             <tr>
               <td>Wind Speed:</td>
-              <td><span id="speed">5</span> mph</td>
+              <td><span id="speed"></span> mph</td>
             </tr>
           </table>
         </section>
-        <!-- https://video.byui.edu/media/t/0_0a1jxi26 BOOKMARK -->
       </div>
       <div class="fiveDayForecastContainer">
         <h3>5 Day Forecast</h3>
         <div class="fiveDayForecastFlex">
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head">Mon</span>
-            <img src="./images/weather/01-clouds-and-sun.svg" alt="clouds and sun" /><br />
-            <h4>87&#176;F</h4>
+            <span class="fiveDayForecastFlex-head" id="day1"></span>
+            <img id="icon1" src="" alt="" /><br />
+            <h4><span id=temp1></span>&#176;F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head">Tue</span>
-            <img src="./images/weather/02-wind.svg" alt="windy" /><br />
-            <h4>78&#176;F</h4>
+            <span class="fiveDayForecastFlex-head" id="day2"></span>
+            <img id="icon2" src="" alt="" /><br />
+            <h4><span id=temp2></span>&#176;F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head">Wed</span>
-            <img src="./images/weather/03-sun.svg" alt="sunny" /><br />
-            <h4>89&#176;F</h4>
+            <span class="fiveDayForecastFlex-head" id="day3"></span>
+            <img id="icon3" src="" alt="" /><br />
+            <h4><span id=temp3></span>&#176;F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head">Thu</span>
-            <img src="./images/weather/04-storm.svg" alt="stormy" /><br />
-            <h4>72&#176;F</h4>
+            <span class="fiveDayForecastFlex-head" id="day4"></span>
+            <img id="icon4" src="" alt="" /><br />
+            <h4><span id=temp4></span>&#176;F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head">Fri</span>
-            <img src="./images/weather/05-rain.svg" alt="rainy" /><br />
-            <h4>75&#176;F</h4>
+            <span class="fiveDayForecastFlex-head" id="day5"></span>
+            <img id="icon5" src="" alt="" /><br />
+            <h4><span id=temp5></span>&#176;F</h4>
           </div>
         </div>
       </div>
@@ -196,10 +196,11 @@
       <script src="./js/todaysDate.js"></script>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/saturdayBanner.js"></script>
+  <script src="./js/forecast.js"></script>
   <script src="js/windchill.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script>
     WebFont.load({ google: { families: ["Oswald", "ABeeZee"] } });
   </script>

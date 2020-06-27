@@ -6,7 +6,7 @@
 //  It is recommended that you isolate the temperature and wind speed values in
 //  your HTML document for easy extraction.
 
-var t = document.getElementById('temp').textContent;
+var t = document.getElementById('currentTemp').textContent;
 var s = document.getElementById('speed').textContent;
 
 // windChill

@@ -222,6 +222,10 @@ table {
   display: none;
 }
 
+.fiveDayForecastContainer h3 {
+  color: white;
+}
+
 .fiveDayForecastFlex {
   display: none;
 }
