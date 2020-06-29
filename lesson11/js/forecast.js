@@ -32,9 +32,32 @@ fetch(apiUrlForecast)
                 });
     });
 
-const apiUrlEvents = 'https://byui-cit230.github.io/weather/data/towndata.json'
-fetch(apiUrlEvents)
+const apiUrlFishHaven = 'https://byui-cit230.github.io/weather/data/towndata.json'
+fetch(apiUrlFishHaven)
     .then((response) => response.json())
     .then((jsObject) => {
+        document.getElementById('eventFH0').textContent = jsObject.towns[1].events[0];
+        document.getElementById('eventFH1').textContent = jsObject.towns[1].events[1];
+        document.getElementById('eventFH2').textContent = jsObject.towns[1].events[2];
+        document.getElementById('eventFH3').textContent = jsObject.towns[1].events[3];
+    });
 
-    })
+const apiUrlPreston = 'https://byui-cit230.github.io/weather/data/towndata.json'
+fetch(apiUrlPreston)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        document.getElementById('eventP0').textContent = jsObject.towns[4].events[0];
+        document.getElementById('eventP1').textContent = jsObject.towns[4].events[1];
+        document.getElementById('eventP2').textContent = jsObject.towns[4].events[2];
+    });
+
+const apiUrlSoda = 'https://byui-cit230.github.io/weather/data/towndata.json'
+fetch(apiUrlSoda)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        document.getElementById('eventS0').textContent = jsObject.towns[5].events[0];
+        document.getElementById('eventS1').textContent = jsObject.towns[5].events[1];
+        document.getElementById('eventS2').textContent = jsObject.towns[5].events[2];
+    });
+
+

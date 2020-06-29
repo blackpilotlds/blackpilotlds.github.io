@@ -18,10 +18,6 @@
 </head>
 
 <body>
-  <div id="saturdayBanner">
-    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-    park pavilion.
-  </div>
   <header>
     <picture><img src="../lesson3/images/logo-in-white.svg" alt="logo in color" /></picture>
     <section class="headings">
@@ -33,8 +29,8 @@
     <ul class="navigation">
       <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
       <li><a href="./">Home</a></li>
-      <li><a href="./fishHaven.html">Fish Haven</a></li>
-      <li><a class="active" href="./preston.html">Preston</a></li>
+      <li><a class="active" href="./fishHaven.html">Fish Haven</a></li>
+      <li><a href="./preston.html">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="./stormcenter.html">Storm Center</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
@@ -42,12 +38,29 @@
   </nav>
   <main>
     <div class="mainDivContainer">
-      <h2>Preston Idaho</h2>
+      <h2>Fish Haven</h2>
       <div>
-              <p colspan="2">Upcoming Events:</p>
-              <p><span id="eventP0"></span></p>
-              <p><span id="eventP1"></span></p>
-              <p><span id="eventP2"></span></p>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Upcoming Events:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span id="eventFH0"></span></td>
+            </tr>
+            <tr>
+              <td><span id="eventFH1"></span></td>
+            </tr>
+            <tr>
+              <td><span id="eventFH2"></span></td>
+            </tr>
+            <tr>
+              <td><span id="eventFH3"></span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="weatherImageContainer">
         <div class="weatherImage">
@@ -203,7 +216,6 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/nav.js"></script>
-  <script src="js/saturdayBanner.js"></script>
   <script src="./js/forecast.js"></script>
   <script src="js/windchill.js"></script>
   <script>
