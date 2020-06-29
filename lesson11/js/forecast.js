@@ -2,7 +2,7 @@ const apiUrlWeather = 'https://api.openweathermap.org/data/2.5/weather?id=560447
 fetch(apiUrlWeather)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        // console.log(jsObject);
         document.getElementById('aboutWeather').textContent = jsObject.weather[0].main;
         document.getElementById('currentTemp').textContent = jsObject.main.temp;
         document.getElementById('HUM').textContent = jsObject.main.humidity;
@@ -14,10 +14,6 @@ fetch(apiUrlForecast)
     .then((response) => response.json())
     .then((jsObject) => {
         // console.log(jsObject);
-        // document.getElementById('aboutWeather').textContent = jsObject.list[0].weather[0].main;
-        // document.getElementById('currentTemp').textContent = jsObject.list[0].main.temp;
-        // document.getElementById('HUM').textContent = jsObject.list[0].main.humidity;
-        // document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
 
             const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
             // console.log(fiveDayForecast);
@@ -35,3 +31,10 @@ fetch(apiUrlForecast)
                 days++;
                 });
     });
+
+const apiUrlEvents = 'https://byui-cit230.github.io/weather/data/towndata.json'
+fetch(apiUrlEvents)
+    .then((response) => response.json())
+    .then((jsObject) => {
+
+    })
