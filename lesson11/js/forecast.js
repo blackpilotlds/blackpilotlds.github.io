@@ -32,16 +32,6 @@ fetch(apiUrlForecast)
                 });
     });
 
-const apiUrlFishHaven = 'https://byui-cit230.github.io/weather/data/towndata.json'
-fetch(apiUrlFishHaven)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        document.getElementById('eventFH0').textContent = jsObject.towns[1].events[0];
-        document.getElementById('eventFH1').textContent = jsObject.towns[1].events[1];
-        document.getElementById('eventFH2').textContent = jsObject.towns[1].events[2];
-        document.getElementById('eventFH3').textContent = jsObject.towns[1].events[3];
-    });
-
 const apiUrlPreston = 'https://byui-cit230.github.io/weather/data/towndata.json'
 fetch(apiUrlPreston)
     .then((response) => response.json())
@@ -51,13 +41,14 @@ fetch(apiUrlPreston)
         document.getElementById('eventP2').textContent = jsObject.towns[4].events[2];
     });
 
-const apiUrlSoda = 'https://byui-cit230.github.io/weather/data/towndata.json'
-fetch(apiUrlSoda)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        document.getElementById('eventS0').textContent = jsObject.towns[5].events[0];
-        document.getElementById('eventS1').textContent = jsObject.towns[5].events[1];
-        document.getElementById('eventS2').textContent = jsObject.towns[5].events[2];
-    });
+var t = document.getElementById('currentTemp').textContent;
+var s = document.getElementById('speed').textContent;
 
-
+if ( t <=50 && s >3 ) {
+    var ttp     = Math.pow(s,0.16);
+    var formula = 35.74 + 0.6215 * t - 35.75 * ttp + 0.4275 * t * ttp;
+    var answer  = formula.toFixed(0);
+    document.getElementById('windChill').innerHTML      = answer + "&#176;F";
+} else {
+    document.getElementById('windChill').textContent    = "N/A";
+}

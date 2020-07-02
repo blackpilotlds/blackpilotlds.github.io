@@ -29,24 +29,24 @@
     <ul class="navigation">
       <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
       <li><a href="./">Home</a></li>
-      <li><a class="active" href="./fishHaven.html">Fish Haven</a></li>
+      <li><a href="./fishHaven.html">Fish Haven</a></li>
       <li><a href="./preston.html">Preston</a></li>
-      <li><a href="./sodaSprings.html">Soda Springs</a></li>
+      <li><a class="active" href="./sodaSprings.html">Soda Springs</a></li>
       <li><a href="./stormcenter.html">Storm Center</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
     </ul>
   </nav>
   <main>
     <div class="mainDivContainer">
-      <h2>Fish Haven</h2>
+      <h2>Soda Springs</h2>
       <div class="upcomingEvents">
-        <div>
-          <h3>Upcoming Events:</h3>
-          <p><span id="eventFH0"></span></p>
-          <p><span id="eventFH1"></span></p>
-          <p><span id="eventFH2"></span></p>
-          <p><span id="eventFH3"></span></p>
-        </div>
+          <div>
+              <h3>Upcoming Events:</h3>
+              <p><span id="eventS0"></span></p>
+              <p><span id="eventS1"></span></p>
+              <p><span id="eventS2"></span></p>
+              <p><span id="eventS3"></span></p>
+            </div>
       </div>
       <div class="weatherImageContainer">
         <div class="weatherImage">
@@ -69,23 +69,23 @@
             </tr>
             <tr>
               <td>Currently:</td>
-              <td><span id="aboutWeatherFH"></span></td>
+              <td><span id="aboutWeatherSS"></span></td>
             </tr>
             <tr>
               <td>Temperature:</td>
-              <td><span id="currentTempFH"></span>&#176; F</td>
+              <td><span id="currentTempSS"></span>&#176; F</td>
             </tr>
             <tr>
               <td>Wind Chill:</td>
-              <td><span id="windChillFH"></span></td>
+              <td><span id="windChillSS"></span></td>
             </tr>
             <tr>
               <td>Humidity:</td>
-              <td><span id="HUMFH"></span>%</td>
+              <td><span id="HUMSS"></span>%</td>
             </tr>
             <tr>
               <td>Wind Speed:</td>
-              <td><span id="speedFH"></span> mph</td>
+              <td><span id="speedSS"></span> mph</td>
             </tr>
           </table>
         </section>
@@ -94,29 +94,29 @@
         <h3>5 Day Forecast</h3>
         <div class="fiveDayForecastFlex">
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head" id="dayFH1"></span>
-            <img id="iconFH1" src="" alt="" /><br />
-            <h4><span id=tempFH1></span>&#176; F</h4>
+            <span class="fiveDayForecastFlex-head" id="daySS1"></span>
+            <img id="iconSS1" src="" alt="" /><br />
+            <h4><span id=tempSS1></span>&#176; F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head" id="dayFH2"></span>
-            <img id="iconFH2" src="" alt="" /><br />
-            <h4><span id=tempFH2></span>&#176; F</h4>
+            <span class="fiveDayForecastFlex-head" id="daySS2"></span>
+            <img id="iconSS2" src="" alt="" /><br />
+            <h4><span id=tempSS2></span>&#176; F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head" id="dayFH3"></span>
-            <img id="iconFH3" src="" alt="" /><br />
-            <h4><span id=tempFH3></span>&#176; F</h4>
+            <span class="fiveDayForecastFlex-head" id="daySS3"></span>
+            <img id="iconSS3" src="" alt="" /><br />
+            <h4><span id=tempSS3></span>&#176; F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head" id="dayFH4"></span>
-            <img id="iconFH4" src="" alt="" /><br />
-            <h4><span id=tempFH4></span>&#176; F</h4>
+            <span class="fiveDayForecastFlex-head" id="daySS4"></span>
+            <img id="iconSS4" src="" alt="" /><br />
+            <h4><span id=tempSS4></span>&#176; F</h4>
           </div>
           <div class="fiveDayForecastFlex-col">
-            <span class="fiveDayForecastFlex-head" id="dayFH5"></span>
-            <img id="iconFH5" src="" alt="" /><br />
-            <h4><span id=tempFH5></span>&#176; F</h4>
+            <span class="fiveDayForecastFlex-head" id="daySS5"></span>
+            <img id="iconSS5" src="" alt="" /><br />
+            <h4><span id=tempSS5></span>&#176; F</h4>
           </div>
         </div>
       </div>
@@ -202,7 +202,8 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/nav.js"></script>
-  <script src="./js/forecastFH.js"></script>
+  <script src="./js/forecastSS.js"></script>
+  <script src="js/windchill.js"></script>
   <script>
     WebFont.load({ google: { families: ["Oswald", "ABeeZee"] } });
   </script>

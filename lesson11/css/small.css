@@ -166,6 +166,20 @@ h3 {
   margin-top: 0em;
 }
 
+.upcomingEvents {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.upcomingEvents div {
+  text-align: center;
+  background-color: var(--background2);
+  padding: 1em 1em;
+}
+
+.upcomingEvents p {
+}
+
 .weatherImageContainer {
   position: relative;
   margin: 10px auto;
@@ -475,8 +489,7 @@ p {
   margin-bottom: 1em;
 }
 
-.homeArticle h3,
-p {
+.homeArticle p {
   margin-bottom: 0;
 }
 
