@@ -41,6 +41,15 @@
     margin: 0 auto;
   }
 
+  .upcomingEvents {
+    max-width: 360px;
+  }
+
+  .upcomingEvents div {
+    font-size: 1em;
+  }
+  
+
   footer {
     font-size: 1em;
   }
