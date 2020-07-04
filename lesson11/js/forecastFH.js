@@ -26,7 +26,7 @@ fetch(apiUrlForecast)
                         let desc = forecast.weather[0].description;
                             document.getElementById(`tempFH${days+ 1}`).innerHTML = `${forecast.main.temp.toFixed(0)}`;
                             document.getElementById(`dayFH${days+ 1}`).textContent = week[d.getDay()];
-                            // document.getElementById(`iconFH${days+ 1}`).setAttribute('src', imgage);
+                            document.getElementById(`iconFH${days+ 1}`).setAttribute('src', imgage);
                             document.getElementById(`iconFH${days+ 1}`).setAttribute('alt', desc);
                 days++;
                 });
