@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Modak&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -311,19 +311,54 @@ body {
   font-size: 16px;
   max-width: 1hw;
   margin: 0 auto;
-  /* padding: 0em 1em 0em 1em; */
-  font-family: var(--mainSecond); }
+  font-family: "Quicksand", sans-serif;
+  padding: 0 5%; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    font-family: "Permanent Marker", cursive; }
 
 header {
-  max-width: 960px;
+  max-width: 960px; }
+  header a img {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    height: auto; }
+
+nav {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column; }
-  header a {
-    margin: 0 auto; }
-    header a img {
-      width: 100%;
-      height: auto; }
+  width: 100%;
+  background-color: #09bcd3; }
+
+.navigation {
+  list-style: none;
+  padding: 0em;
+  margin-top: 0em;
+  font-size: 0.8em; }
+  .navigation li:first-child {
+    display: block; }
+  .navigation li {
+    display: none; }
+  .navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 700; }
+  .navigation a:hover {
+    color: #000;
+    background-color: #FFF; }
+  .navigation .active {
+    background-color: #009688;
+    color: #000; }
+  .navigation .hamburger {
+    text-align: center; }
+
+.responsive li {
+  display: block; }
 
 /* end of media query */
 /* end of media query */
