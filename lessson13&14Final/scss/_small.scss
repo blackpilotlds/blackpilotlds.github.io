@@ -24,7 +24,8 @@ body {
     background-color: $color1Yellow;
     color: $color4DBlue;
     padding: 3em 0;
-    h1,h2 {
+    h1,
+    h2 {
       margin: 0 0;
     }
   }
@@ -87,4 +88,135 @@ nav {
 
 .responsive li {
   display: block;
+}
+
+// 375 x 299 slideshow on the bottom of the pages 6 for cars 6 for location (3
+// for one location, 3 for the other) total 12
+
+.card {
+  position: relative;
+
+  width: 375px;
+  height: 299px;
+  overflow: hidden;
+
+  // border-radius: 5px;
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 13;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(375px);
+  background-image: url("/images/profile-resized.JPG");
+  // https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true
+  
+  animation: opaqTransition 36s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+.card_part.card_part-two {
+  z-index: 12;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true);
+  animation-delay: 3s;
+}
+
+.card_part.card_part-three {
+  z-index: 11;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true);
+  animation-delay: 6s;
+}
+
+.card_part.card_part-four {
+  z-index: 10;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 9s;
+}
+.card_part.card_part-five {
+  z-index: 9;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 12s;
+}
+.card_part.card_part-six {
+  z-index: 8;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 15s;
+}
+.card_part.card_part-seven {
+  z-index: 7;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 18s;
+}
+
+.card_part.card_part-seven {
+  z-index: 6;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 21s;
+}
+
+.card_part.card_part-seven {
+  z-index: 5;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 24s;
+}
+
+.card_part.card_part-seven {
+  z-index: 4;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 27s;
+}
+
+.card_part.card_part-seven {
+  z-index: 3;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 30s;
+}
+
+.card_part.card_part-seven {
+  z-index: 2;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 33s;
+}
+
+.card_part.card_part-seven {
+  z-index: 1;
+  background-image: url(https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true);
+  animation-delay: 36s;
+}
+
+@keyframes opaqTransition {
+  3% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  28% {
+    transform: translateX(-375px);
+  }
+  100% {
+    transform: translateX(-375px);
+  }
 }
