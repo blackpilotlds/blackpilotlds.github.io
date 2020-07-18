@@ -132,7 +132,7 @@ nav {
 
   transform: translateX(375px);
   background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/01_[S]_Carmen_Cozumel.jpg");
-  animation: opaqTransition 39s cubic-bezier(1, 1, 1, 1) infinite;
+  animation: opaqTransition 42s cubic-bezier(1, 1, 1, 1) infinite;
 }
 
 .card_part.card_part-two {
@@ -199,7 +199,10 @@ nav {
 }
 
 @keyframes opaqTransition {
-  1% {
+  3% {
+    transform: translateX(0);
+  }
+  6% {
     transform: translateX(0);
   }
   25% {
