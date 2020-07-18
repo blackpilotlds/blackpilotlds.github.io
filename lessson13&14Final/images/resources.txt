@@ -2,31 +2,37 @@
             Caribbean Sea
 [PICS]      Island of Cozumel
                 -- Two physical rental locations on Cozumel
-                    1. [3] Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel 
-                    2. [3] near the Terminal Puerta Maya further south along the coast which
+                    v 1. [3] Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel 
+                    v 2. [3] near the Terminal Puerta Maya further south along the coast which
                     caters to the cruise lines and patrons
             Motor scooters, jeeps, and side-by-sides ATVs
                 =======================
                 -- Honda Motor Scooters
                 =======================
-                -- -- Honda Metropolitan (49cc) - 1 person
-                -- -- Honda Dio (110cc) - 2 person
-                -- -- Honda PCX150 (149cc) - 2 person
+                    v -- -- Honda Metropolitan (49cc) - 1 person
+                    v -- -- Honda Dio (110cc) - 2 person
+                    v -- -- Honda PCX150 (149cc) - 2 person
                 ===================
                 -- ATV Side-by-Side
                 ===================
-                -- -- Honda Pioneer 1000
+                    v -- -- Honda Pioneer 1000
                 ===============
                 -- Jeep Rentals
                 ===============
-                -- -- 4-door Jeep Wrangler - manual with A/C - 5 people max
-                -- -- 2-door Jeep Wrangler - open air - manual - 4 people max
+                    v -- -- 4-door Jeep Wrangler - manual with A/C - 5 people max
+                    v -- -- 2-door Jeep Wrangler - open air - manual - 4 people max
 [OFFERS]    caters to locals, walk-in tourists, enthusiasts, and cruise-based touring
             groups and partnerships. 
 [RESOURCES] Images
-            01_[O]_Carmen_Cozumel.jpg (https://www.mexperience.com/wp-content/uploads/Cozumel-Beach-Resort-Aerial-NBS.jpg)
-            02_[O]_Carmen_Cozumel.png (https://www.playadelcarmen.com/blog/wp-content/uploads/coz-1.png)    
-            03_[O]_Carmen_Cozumel.jpg (https://travelspot24.com/wp-content/uploads/2019/12/Playa-del-Carmen-Tours-Hotels-Restaurants-Foods-Weather-Culture-Things-to-Do-Travel-Guide-in-Mexico.jpg)
-            04_[O]_Puerta_Maya.jpg (https://thisiscozumel.com/images/news-2015/new-cozumel-cruise-pier-01.jpg)
-            05_[O]_Puerta_Maya.jpg (https://totravelornot.files.wordpress.com/2014/01/img_3282.jpg)
-            06_[O]_Puerta_Maya.jpg (https://i.pinimg.com/originals/43/c5/25/43c5256a26eb7478514900859d84020f.jpg)
+            01_[O]_Carmen_Cozumel.jpg       (https://www.mexperience.com/wp-content/uploads/Cozumel-Beach-Resort-Aerial-NBS.jpg)
+            02_[O]_Carmen_Cozumel.png       (https://www.playadelcarmen.com/blog/wp-content/uploads/coz-1.png)    
+            03_[O]_Carmen_Cozumel.jpg       (https://travelspot24.com/wp-content/uploads/2019/12/Playa-del-Carmen-Tours-Hotels-Restaurants-Foods-Weather-Culture-Things-to-Do-Travel-Guide-in-Mexico.jpg)
+            04_[O]_Puerta_Maya.jpg          (https://thisiscozumel.com/images/news-2015/new-cozumel-cruise-pier-01.jpg)
+            05_[O]_Puerta_Maya.jpg          (https://ctl.s6img.com/society6/img/Vmk8dS3-f4jPz-QTx9gGYSOT3JU/w_1500/prints/~artwork/s6-0031/a/14959891_11024423/~~/puerta-maya-prints.jpg)
+            06_[O]_Puerta_Maya.jpg          (https://i.pinimg.com/originals/43/c5/25/43c5256a26eb7478514900859d84020f.jpg)
+            07_[O]_Honda_Metropolitan.jpg   (https://www.motorscooterguide.net/Pictures/Honda-Giorno-2016-NCH50-Met.jpg)
+            08_[O]_Honda_Dio.png            (https://cdn.autoportal.com/bp-v3/img/models/32/9/9.png)
+            09_[O]_Honda_PCX150.jpg         (https://img.indianautosblog.com/2018/04/2018-Honda-PCX125-press-left-side.jpg)
+            10_[O]_Honda_Pioneer.jpg        (https://www.roughcountry.com/pub/media/catalog/product/i/m/img_3676_2_1.jpg)
+            11_[O]_Jeep_4.jpg               (https://cdn.dealeraccelerate.com/pjs/1/351/10240/1920x1440/2009-jeep-wrangler-unlimited-rubicon)
+            12_[O]_Jeep_2.jpg               (https://www.motortrend.com/uploads/sites/10/2015/11/2012-jeep-wrangler-sport-suv-angular-front.png)
