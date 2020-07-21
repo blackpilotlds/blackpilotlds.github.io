@@ -36,6 +36,7 @@
             10_[O]_Honda_Pioneer.jpg        (https://www.roughcountry.com/pub/media/catalog/product/i/m/img_3676_2_1.jpg)
             11_[O]_Jeep_4.jpg               (https://cdn.dealeraccelerate.com/pjs/1/351/10240/1920x1440/2009-jeep-wrangler-unlimited-rubicon)
             12_[O]_Jeep_2.jpg               (https://www.motortrend.com/uploads/sites/10/2015/11/2012-jeep-wrangler-sport-suv-angular-front.png)
+            https://openweathermap.org/
 
 
         <div class="w3-display-container mySlides">

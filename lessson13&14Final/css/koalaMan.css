@@ -378,6 +378,7 @@ nav {
 .responsive li {
   display: block; }
 
+/* #region  SLIDESHOW */
 .mySlides {
   display: none; }
 
@@ -388,12 +389,15 @@ nav {
 
 .w3-display-container {
   position: relative;
-  max-height: 324px; }
+  display: block;
+  background-color: #09bcd3; }
+  .w3-display-container img {
+    width: 100%; }
 
 .w3-display-bottomleft {
   position: absolute;
   left: 0;
-  bottom: 0; }
+  top: 0; }
 
 .w3-large {
   font-size: 18px; }
@@ -435,6 +439,27 @@ nav {
   right: 0%;
   transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%); }
+
+/* #endregion */
+.weatherBanner {
+  background-color: #09bcd3;
+  padding: 0.5em; }
+
+.weatherBanner h3,
+table.weatherBannerTable {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: black; }
+
+.weatherBanner h3 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px; }
+
+.weatherBannerTable tr td:nth-child(1) {
+  text-align: right;
+  padding-right: 0.1em;
+  vertical-align: text-top;
+  color: black; }
 
 /* end of media query */
 /* end of media query */
