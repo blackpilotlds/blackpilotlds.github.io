@@ -378,102 +378,63 @@ nav {
 .responsive li {
   display: block; }
 
-.card {
+.mySlides {
+  display: none; }
+
+.w3-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px; }
+
+.w3-display-container {
   position: relative;
-  width: 375px;
-  height: 324px;
-  overflow: hidden; }
+  max-height: 324px; }
 
-/*Light blue cover above the slide show*/
-.card::after {
-  content: "";
+.w3-display-bottomleft {
   position: absolute;
   left: 0;
-  top: 0;
-  z-index: 900;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1); }
+  bottom: 0; }
 
-.card_part {
+.w3-large {
+  font-size: 18px; }
+
+.w3-container {
+  padding: 0.01em 16px; }
+
+.w3-padding-16 {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.w3-black {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.493) !important; }
+
+.w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  white-space: nowrap;
+  white-space: normal; }
+
+.w3-display-left {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 13;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transform: translateX(375px);
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/01_[S]_Carmen_Cozumel.jpg");
-  animation: opaqTransition 42s cubic-bezier(1, 1, 1, 1) infinite; }
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
 
-.card_part.card_part-two {
-  z-index: 12;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/07_[S]_Honda_Metropolitan.jpg");
-  animation-delay: 3s; }
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
 
-.card_part.card_part-three {
-  z-index: 11;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/02_[S]_Carmen_Cozumel.jpg");
-  animation-delay: 6s; }
-
-.card_part.card_part-four {
-  z-index: 10;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/08_[S]_Honda_Dio.jpg");
-  animation-delay: 9s; }
-
-.card_part.card_part-five {
-  z-index: 9;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/03_[S]_Carmen_Cozumel.jpg");
-  animation-delay: 12s; }
-
-.card_part.card_part-six {
-  z-index: 8;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/09_[S]_Honda_PCX150.jpg");
-  animation-delay: 15s; }
-
-.card_part.card_part-seven {
-  z-index: 7;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/04_[S]_Puerta_Maya.jpg");
-  animation-delay: 18s; }
-
-.card_part.card_part-eight {
-  z-index: 6;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/10_[S]_Honda_Pioneer.jpg");
-  animation-delay: 21s; }
-
-.card_part.card_part-nine {
-  z-index: 5;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/05_[S]_Puerta_Maya.jpg");
-  animation-delay: 24s; }
-
-.card_part.card_part-ten {
-  z-index: 4;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/11_[S]_Jeep_4.jpg");
-  animation-delay: 27s; }
-
-.card_part.card_part-eleven {
-  z-index: 3;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/06_[S]_Puerta_Maya.jpg");
-  animation-delay: 30s; }
-
-.card_part.card_part-twelve {
-  z-index: 2;
-  background-image: url("/lessson13&14Final/images/6loc6vehicles/smallView/12_[S]_Jeep_2.jpg");
-  animation-delay: 33s; }
-
-@keyframes opaqTransition {
-  3% {
-    transform: translateX(0); }
-  6% {
-    transform: translateX(0); }
-  25% {
-    transform: translateX(0); }
-  28% {
-    transform: translateX(-375px); }
-  100% {
-    transform: translateX(-375px); } }
 /* end of media query */
 /* end of media query */
