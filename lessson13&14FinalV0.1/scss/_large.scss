@@ -1,0 +1,64 @@
+main {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  a {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    // justify-content: space-around;
+    justify-items: left;
+    picture {
+        grid-row: 1/5;
+        img {
+          width: 200px;
+          padding: 2em 1em 1em 3em;
+          justify-self: left;
+        }
+    }
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: transparent;
+}
+
+.navigation {
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.navigation li {
+  display: block; /* change state in small view */
+  // flex: 1 1 auto;
+}
+.navigation a {
+  text-align: center;
+  color: black;
+  font-size: 1.2em;
+  padding: 1em 0.1em;
+  font-weight: 600;
+}
+.navigation li:first-child {
+  display: none;
+}
+
+.navigation {
+  a:hover {
+    color: $colorBlack;
+    background-color: $color1Yellow;
+  }
+  .active {
+    color: red;
+    background-color: transparent;
+  }
+}
+
+.mainDivContainerGalleryGrid {
+  grid-template-columns: repeat(3, 1fr);
+}

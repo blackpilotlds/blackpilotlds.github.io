@@ -17,23 +17,23 @@
         <a href="./">
             <picture><img src="./images/Logo4.png" alt="logo in color" /></picture>
         </a>
+        <nav>
+            <ul class="navigation">
+                <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
+                <li><a class="active" href="./">Home</a></li>
+                <li><a href="./02rentals.html">Rentals</a></li>
+                <li><a href="./03reservations.html">Reservations</a></li>
+                <li><a href="./04tours.html">Tours</a></li>
+                <li><a href="./05contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="navigation">
-            <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
-            <li><a class="active" href="./">Home</a></li>
-            <li><a href="./02rentals.html">Rentals</a></li>
-            <li><a href="./03reservations.html">Reservations</a></li>
-            <li><a href="./04tours.html">Tours</a></li>
-            <li><a href="./05contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
     <section class="headerWords">
         <h1>Scoot Rentals</h1>
         <h2>for You and your friends...</h2>
     </section>
     <section class="weatherBanner">
-        <h3>Weather</h3>
+        <h3>Current Weather</h3>
         <table class="weatherBannerTable">
             <tr>
                 <th>‎‎‎‏‏‎</th>
@@ -44,7 +44,7 @@
                 <td><span id="currentTemp"></span>&#176; F</td>
             </tr>
             <tr>
-                <td>Currently:</td>
+                <td>Condition:</td>
                 <td><span id="aboutWeather"></span></td>
             </tr>
             <tr>
@@ -54,6 +54,35 @@
         </table>
         <a href="./03reservations.html"><button class="bookClick"><span>BooK Now! </span></button></a>
     </section>
+    <div class="fiveDayForecast">
+        <div class="fiveDayForecastFlex">
+            <div class="fiveDayForecastFlex-col">
+                <span class="fiveDayForecastFlex-head" id="day1"></span>
+                <img id="icon1" src="" alt="" /><br />
+                <h4><span id=temp1></span>&#176; F</h4>
+            </div>
+            <div class="fiveDayForecastFlex-col">
+                <span class="fiveDayForecastFlex-head" id="day2"></span>
+                <img id="icon2" src="" alt="" /><br />
+                <h4><span id=temp2></span>&#176; F</h4>
+            </div>
+            <div class="fiveDayForecastFlex-col">
+                <span class="fiveDayForecastFlex-head" id="day3"></span>
+                <img id="icon3" src="" alt="" /><br />
+                <h4><span id=temp3></span>&#176; F</h4>
+            </div>
+            <div class="fiveDayForecastFlex-col">
+                <span class="fiveDayForecastFlex-head" id="day4"></span>
+                <img id="icon4" src="" alt="" /><br />
+                <h4><span id=temp4></span>&#176; F</h4>
+            </div>
+            <div class="fiveDayForecastFlex-col">
+                <span class="fiveDayForecastFlex-head" id="day5"></span>
+                <img id="icon5" src="" alt="" /><br />
+                <h4><span id=temp5></span>&#176; F</h4>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="mainDivContainer">
             <div class="mainDivContainerGalleryGrid">
@@ -118,12 +147,18 @@
             <p id="address">Plaza Mexico, Av Claudio Canto, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
             <p id="phone">+52 984 115 0442</p>
             <div class="socialMedia">
-                
+                <a href="https://www.youtube.com/"><img src="./images/socialMedia/youtube.svg"
+                        alt="red youtube logo for social media"></a>
+                <a href="https://www.instagram.com/"><img src="./images/socialMedia/instagram.svg"
+                        alt="brown insta logo for social media"></a>
+                <a href="https://www.facebook.com/"><img src="./images/socialMedia/facebook.svg"
+                        alt="blue fb logo for social media"></a>
             </div>
         </div>
     </main>
     <footer>
-        &copy;What Temperature | Sergei Aleinikov
+        &copy;<span>Scoots Nature</span> | <a href="./00resourcePage.html">Resource Page</a> <br> Powered by
+        api.openweathermap.org
         <br />
         <div id="lastUpdated">
             <script src="./js/todaysDate.js"></script>

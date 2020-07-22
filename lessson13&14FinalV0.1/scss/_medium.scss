@@ -1,0 +1,57 @@
+main {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.weatherBanner {
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+}
+
+.fiveDayForecast {
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    display: inherit;
+    margin-bottom: 1em;
+    font-size: 1em;
+  }
+
+  .fiveDayForecastFlex {
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 1px solid #fff;
+    font-size: 1.1rem;
+  }
+
+  .fiveDayForecastFlex-col {
+    flex: 1 1 auto;
+    color: black;
+    border-bottom: 1px solid $color4DBlue;
+    border-left: 1px solid $color4DBlue;
+    text-align: center;
+    background-color: $color5LBlue;
+    h4 {
+        margin-top: 0em;
+    }
+  }
+
+  .fiveDayForecastFlex-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid $color4DBlue;
+    text-align: center;
+    font-weight: 700;
+    background-color: $color4DBlue;
+    color: white;
+  }
+
+.bookClick {
+    border-radius: 5px;
+    width: 250px;
+}
+
+.mainDivContainerGalleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+}

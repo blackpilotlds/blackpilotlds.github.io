@@ -36,50 +36,10 @@
             10_[O]_Honda_Pioneer.jpg        (https://www.roughcountry.com/pub/media/catalog/product/i/m/img_3676_2_1.jpg)
             11_[O]_Jeep_4.jpg               (https://cdn.dealeraccelerate.com/pjs/1/351/10240/1920x1440/2009-jeep-wrangler-unlimited-rubicon)
             12_[O]_Jeep_2.jpg               (https://www.motortrend.com/uploads/sites/10/2015/11/2012-jeep-wrangler-sport-suv-angular-front.png)
+            
             https://openweathermap.org/
-
-            Plaza Mexico, Av Claudio Canto, 77600 San Miguel de Cozumel, Q.R., Mexico
-
-
-        <div class="w3-display-container mySlides">
-            <img src="./images/6loc6vehicles/smallView/10_[S]_Honda_Pioneer.jpg" alt="Honda_Pioneer_Red">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Honda Pioneer
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="./images/6loc6vehicles/smallView/09_[S]_Honda_PCX150.jpg" alt="Honda_PCX150">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Honda PCX150
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="./images/6loc6vehicles/smallView/11_[S]_Jeep_4.jpg" alt="Jeep_4_doors_red">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Jeep 4 Doors
-            </div>
-        </div>
-
-
-        <div class="w3-display-container mySlides">
-            <img src="./images/6loc6vehicles/smallView/07_[S]_Honda_Metropolitan.jpg" alt="Honda-Giorno-2016-NCH50-Met">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Honda Metropolitan
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="./images/6loc6vehicles/smallView/08_[S]_Honda_Dio.jpg" alt="Honda_Dio_Red">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Honda Dio
-            </div>
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="./images/6loc6vehicles/smallView/12_[S]_Jeep_2.jpg" alt="">
-            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Jeep 2 Doors
-            </div>
-        </div>
+            
+            YouTube icon Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            instagram Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            facebook Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            

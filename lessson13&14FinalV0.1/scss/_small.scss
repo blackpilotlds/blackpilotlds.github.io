@@ -13,7 +13,6 @@ body {
     font-family: $fontBold;
   }
   main,
-  footer,
   .headerWords,
   .contactContainer {
     padding: 0 $gap;
@@ -53,7 +52,7 @@ header {
 nav {
   margin: 0 auto;
   width: 100%;
-  background-color: $color5LBlue;
+  background-color: $color4DBlue;
 }
 
 .navigation {
@@ -98,9 +97,6 @@ nav {
 
 /* #endregion */
 
-// 375 x 324 slideshow on the bottom of the pages 6 for cars 6 for location (3
-// for one location, 3 for the other) total 12
-
 /* #region  WEATHER BANNER */
 
 .weatherBanner {
@@ -137,7 +133,7 @@ nav {
 }
 
 .bookClick span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -155,7 +151,7 @@ nav {
 }
 
 .weatherBanner {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .weatherBanner h3,
@@ -182,9 +178,11 @@ table.weatherBannerTable {
   font-weight: bolder;
 } // END OF .weatherBannerTable
 
-/* #endregion */
+.fiveDayForecast {
+  display: none;
+}
 
-//
+/* #endregion */
 
 /* #region  LAZY LOAD */
 
@@ -201,7 +199,7 @@ table.weatherBannerTable {
 
 .mainDivContainerGalleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(324px, 324px));
+  grid-template-columns: 1fr;
   justify-content: center;
   grid-gap: 10px;
 }
@@ -225,6 +223,16 @@ table.weatherBannerTable {
 
 /* #endregion */
 
+/* #region  RENTAL SUMMARY */
+
+.rentalsSummary h3 {
+  margin-top: 0em;
+}
+
+/* #endregion */
+
+/* #region  CONTACT */
+
 .contactInfo {
   margin-bottom: 1em;
 }
@@ -232,10 +240,41 @@ table.weatherBannerTable {
 .contactInfo h3 {
   font-family: $fontLogo;
   font-size: 1.5em;
-  margin-bottom: .1em;
+  margin-bottom: 0.1em;
 }
 
-.contactInfo #address,#phone {
+.contactInfo #address,
+#phone {
   margin-top: 0em;
   margin-bottom: 0em;
 }
+
+/* #endregion */
+
+/* #region  SOCIAL MEDIA */
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  img {
+    margin-top: 1em;
+    width: 40px;
+  }
+}
+
+/* #endregion */
+
+/* #region  FOOTER */
+
+footer {
+  max-width: $fullWidth;
+  text-align: center;
+  background-color: $color4DBlue;
+  padding: 1em 1em;
+  span {
+    font-family: $fontLogo;
+  }
+}
+
+/* #endregion */
