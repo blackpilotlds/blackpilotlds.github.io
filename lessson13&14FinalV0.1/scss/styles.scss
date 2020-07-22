@@ -1,0 +1,15 @@
+@import "normalize";
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Permanent+Marker&family=ZCOOL+KuaiLe&display=swap");
+
+@import "variables";
+
+@import "small";
+
+@media only screen and (min-width: 560px) {
+    @import "medium";
+} /* end of media query */
+
+@media only screen and (min-width: 1028px) {
+    @import "large";
+} /* end of media query */

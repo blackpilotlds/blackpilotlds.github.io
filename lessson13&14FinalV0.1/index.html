@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Scoots Nature</title>
+    <meta name="description" content="Scoots rentals for you and your friends,
+    let us help you to enjoy your time without any haste" />
+    <link href="./css/koalaMan.css" rel="stylesheet" />
+    <link href="./images/Logo2.ico" rel="shortcut icon" />
+</head>
+
+<body>
+    <header>
+        <a href="./">
+            <picture><img src="./images/Logo4.png" alt="logo in color" /></picture>
+        </a>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li class="menu"><a class="hamburger" href="#">&#9776;</a></li>
+            <li><a class="active" href="./">Home</a></li>
+            <li><a href="./02rentals.html">Rentals</a></li>
+            <li><a href="./03reservations.html">Reservations</a></li>
+            <li><a href="./04tours.html">Tours</a></li>
+            <li><a href="./05contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="headerWords">
+        <h1>Scoot Rentals</h1>
+        <h2>for You and your friends...</h2>
+    </section>
+    <section class="weatherBanner">
+        <h3>Weather</h3>
+        <table class="weatherBannerTable">
+            <tr>
+                <th>‎‎‎‏‏‎</th>
+                <th>‎‎‎‏‏‎</th>
+            </tr>
+            <tr>
+                <td>Temperature:</td>
+                <td><span id="currentTemp"></span>&#176; F</td>
+            </tr>
+            <tr>
+                <td>Currently:</td>
+                <td><span id="aboutWeather"></span></td>
+            </tr>
+            <tr>
+                <td>Humidity:</td>
+                <td><span id="HUM"></span>%</td>
+            </tr>
+        </table>
+        <a href="./03reservations.html"><button class="bookClick"><span>BooK Now! </span></button></a>
+    </section>
+    <main>
+        <div class="mainDivContainer">
+            <div class="mainDivContainerGalleryGrid">
+                <div class="shadowBox shadow">
+                    <img src="./images/6loc6vehicles/smallView/00_[S]_placeholder.jpg"
+                        data-src="./images/6loc6vehicles/smallView/01_[S]_Carmen_Cozumel.jpg"
+                        alt="cold weather window" />
+                    <div>
+                        <p>Cozumel Beach </p>
+                    </div>
+                </div>
+                <div class="shadowBox shadow">
+                    <img src="./images/6loc6vehicles/smallView/00_[S]_placeholder.jpg"
+                        data-src="./images/6loc6vehicles/smallView/02_[S]_Carmen_Cozumel.jpg" alt="foggy forest" />
+                    <div>
+                        <p>Cozumel</p>
+                    </div>
+                </div>
+                <div class="shadowBox shadow">
+                    <img src="./images/6loc6vehicles/smallView/00_[S]_placeholder.jpg"
+                        data-src="./images/6loc6vehicles/smallView/03_[S]_Carmen_Cozumel.jpg" alt="icy road" />
+                    <div>
+                        <p>Cozumel Port </p>
+                    </div>
+                </div>
+                <div class="shadowBox shadow">
+                    <img src="./images/6loc6vehicles/smallView/00_[S]_placeholder.jpg"
+                        data-src="./images/6loc6vehicles/smallView/04_[S]_Puerta_Maya.jpg" alt="snowy weather" />
+                    <div>
+                        <p>Port Puerta Maya</p>
+                    </div>
+                </div>
+                <div class="shadowBox shadow">
+                    <img src="./images/6loc6vehicles/smallView/00_[S]_placeholder.jpg"
+                        data-src="./images/6loc6vehicles/smallView/05_[S]_Puerta_Maya.jpg" alt="windy-tree" />
+                    <div>
+                        <p>Puerta Maya</p>
+                    </div>
+                </div>
+                <div class="shadowBox shadow">
+                    <img src="./images/6loc6vehicles/smallView/00_[S]_placeholder.jpg"
+                        data-src="./images/6loc6vehicles/smallView/06_[S]_Puerta_Maya.jpg" alt="poor guy in rain" />
+                    <div>
+                        <p>Puerta Maya Shops</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rentalsSummary">
+            <h3>Rental Summary</h3>
+            <ul>
+                <li>Honda Metropolitan (49cc) - 1 person</li>
+                <li>Honda Dio (110cc) - 2 person</li>
+                <li>Honda PCX150 (149cc) - 2 person</li>
+                <li>Honda Pioneer 1000</li>
+                <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+                <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+            </ul>
+        </div>
+        <div class="contactInfo">
+            <h3>Scoots Nature</h3>
+            <p id="address">Plaza Mexico, Av Claudio Canto, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+            <p id="phone">+52 984 115 0442</p>
+            <div class="socialMedia">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy;What Temperature | Sergei Aleinikov
+        <br />
+        <div id="lastUpdated">
+            <script src="./js/todaysDate.js"></script>
+        </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <!-- <script src="js/saturdayBanner.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({ google: { families: ["ZCOOL KuaiLe", "Baloo Bhai 2", "Permanent Marker"] } });
+    </script>
+    <!-- <script src="./js/homeJason.js"></script> -->
+</body>
+
+</html>

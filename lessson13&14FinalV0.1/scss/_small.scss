@@ -1,0 +1,241 @@
+/* #region  TOP */
+
+body {
+  font-size: 16px;
+  max-width: $fullWidth;
+  margin: 0 auto;
+  font-family: $fontReg;
+  font-size: $small;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $fontBold;
+  }
+  main,
+  footer,
+  .headerWords,
+  .contactContainer {
+    padding: 0 $gap;
+    .contactTxt h3 {
+      font-family: $fontLogo;
+    }
+  }
+  .headerWords {
+    text-align: center;
+    background-color: $color1Yellow;
+    color: $color4DBlue;
+    padding: 3em 0;
+    h1,
+    h2 {
+      margin: 0 0;
+    }
+  }
+}
+
+main {
+  max-width: $fullWidth;
+}
+
+header {
+  max-width: $fullWidth;
+  a {
+    img {
+      display: flex;
+      margin: 0 auto;
+      width: 30%;
+      height: auto;
+      padding: 5px 0;
+    }
+  }
+}
+
+nav {
+  margin: 0 auto;
+  width: 100%;
+  background-color: $color5LBlue;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+
+  li:first-child {
+    display: block;
+  }
+
+  li {
+    display: none;
+  }
+
+  a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: $colorWhite;
+  }
+
+  a:hover {
+    color: $colorBlack;
+    background-color: $colorWhite;
+  }
+
+  .active {
+    background-color: $color1Yellow;
+    color: $colorBlack;
+  }
+  .hamburger {
+    text-align: center;
+  }
+}
+
+.responsive li {
+  display: block;
+}
+
+/* #endregion */
+
+// 375 x 324 slideshow on the bottom of the pages 6 for cars 6 for location (3
+// for one location, 3 for the other) total 12
+
+/* #region  WEATHER BANNER */
+
+.weatherBanner {
+  background-color: $color5LBlue;
+  padding: 0.5em;
+  position: relative;
+  padding-left: 30px;
+}
+
+.bookClick {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+
+.bookClick span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bookClick span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bookClick:hover span {
+  padding-right: 25px;
+}
+
+.bookClick:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.weatherBanner {
+    margin-bottom: 1em;
+}
+
+.weatherBanner h3,
+table.weatherBannerTable {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: black;
+}
+
+.weatherBanner h3 {
+  text-decoration: underline;
+}
+
+.weatherBannerTable tr td:nth-child(1) {
+  text-align: right;
+  padding-right: 0.1em;
+  vertical-align: text-top;
+  color: black;
+}
+.weatherBannerTable tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 0.1em;
+  color: $colorWhite;
+  font-weight: bolder;
+} // END OF .weatherBannerTable
+
+/* #endregion */
+
+//
+
+/* #region  LAZY LOAD */
+
+.mainDivContainer {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.success p {
+  color: white;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.mainDivContainerGalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 324px));
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.mainDivContainerGalleryGrid img[data-src] {
+  filter: blur(0.2em);
+}
+.mainDivContainerGalleryGrid img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.shadowBox {
+  background-color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+
+/* #endregion */
+
+.contactInfo {
+  margin-bottom: 1em;
+}
+
+.contactInfo h3 {
+  font-family: $fontLogo;
+  font-size: 1.5em;
+  margin-bottom: .1em;
+}
+
+.contactInfo #address,#phone {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
