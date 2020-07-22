@@ -646,7 +646,8 @@ footer {
     padding-right: 0em;
     max-width: 920px; }
     .weatherBanner table, .weatherBanner h3 {
-      padding-left: 50px; }
+      padding-left: 50px;
+      font-size: 1.2em; }
 
   .bookClick {
     border-radius: 5px;
