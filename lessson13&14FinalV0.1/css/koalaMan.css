@@ -310,7 +310,7 @@ template {
 /* #region  TOP */
 body {
   font-size: 16px;
-  max-width: 1hv;
+  max-width: 100%;
   margin: 0 auto;
   font-family: "Baloo Bhai 2", cursive;
   font-size: 1.1em; }
@@ -337,10 +337,10 @@ body {
       margin: 0 0; }
 
 main {
-  max-width: 1hv; }
+  max-width: 100%; }
 
 header {
-  max-width: 1hv; }
+  max-width: 100%; }
   header a img {
     display: flex;
     margin: 0 auto;
@@ -518,7 +518,7 @@ table.weatherBannerTable {
 /* #endregion */
 /* #region  FOOTER */
 footer {
-  max-width: 1hv;
+  max-width: 100%;
   text-align: center;
   background-color: #009688;
   padding: 1em 1em; }
