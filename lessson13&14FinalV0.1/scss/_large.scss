@@ -58,7 +58,8 @@ nav {
     background-color: $color1Yellow;
   }
   .active {
-    color: red;
+    color: rgb(139,0,0);
+    text-shadow: 2px 2px 15px $color1Yellow;
     background-color: transparent;
   }
 }

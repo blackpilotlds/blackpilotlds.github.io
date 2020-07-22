@@ -7,7 +7,6 @@ main {
   font-size: 1.5em;
   h1,
   h2 {
-    color: $color4DBlue;
     letter-spacing: 3px;
   }
 }
@@ -52,7 +51,7 @@ main {
   text-align: center;
   font-weight: 700;
   background-color: $color4DBlue;
-  color: white;
+  color: black;
 }
 
 .bookClick {

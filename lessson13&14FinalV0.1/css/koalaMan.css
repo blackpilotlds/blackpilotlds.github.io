@@ -330,7 +330,7 @@ body {
   body .headerWords {
     text-align: center;
     background-color: #fdc010;
-    color: #009688;
+    color: black;
     padding: 1.5em 1em; }
     body .headerWords h1,
     body .headerWords h2 {
@@ -407,7 +407,7 @@ table.weatherBannerTable {
 .weatherBannerTable tr td:nth-child(2) {
   text-align: left;
   padding-left: 0.1em;
-  color: #FFF;
+  color: black;
   font-weight: bolder; }
 
 .fiveDayForecast {
@@ -524,6 +524,9 @@ footer {
   padding: 1em 1em; }
   footer span {
     font-family: "Permanent Marker", cursive; }
+  footer a {
+    color: black;
+    font-style: italic; }
 
 /* #endregion */
 @media only screen and (min-width: 560px) {
@@ -535,7 +538,6 @@ footer {
     font-size: 1.5em; }
     .headerWords h1,
     .headerWords h2 {
-      color: #009688;
       letter-spacing: 3px; }
 
   .weatherBanner {
@@ -573,7 +575,7 @@ footer {
     text-align: center;
     font-weight: 700;
     background-color: #009688;
-    color: white; }
+    color: black; }
 
   .bookClick {
     border-radius: 5px;
@@ -635,7 +637,8 @@ footer {
     color: #000;
     background-color: #fdc010; }
   .navigation .active {
-    color: red;
+    color: darkred;
+    text-shadow: 2px 2px 15px #fdc010;
     background-color: transparent; }
 
   .weatherBanner {
