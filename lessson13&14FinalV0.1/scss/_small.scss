@@ -24,7 +24,7 @@ body {
     text-align: center;
     background-color: $color1Yellow;
     color: $color4DBlue;
-    padding: 3em 0;
+    padding: 3em 1em;
     h1,
     h2 {
       margin: 0 0;
@@ -60,15 +60,15 @@ nav {
   padding: 0em;
   margin-top: 0em;
   margin-bottom: 0em;
-
+  
   li:first-child {
     display: block;
   }
-
+  
   li {
     display: none;
   }
-
+  
   a {
     display: block;
     padding: 0.75rem;
@@ -76,12 +76,12 @@ nav {
     text-decoration: none;
     color: $colorWhite;
   }
-
+  
   a:hover {
     color: $colorBlack;
     background-color: $colorWhite;
   }
-
+  
   .active {
     background-color: $color1Yellow;
     color: $colorBlack;
@@ -104,7 +104,37 @@ nav {
   padding: 0.5em;
   position: relative;
   padding-left: 30px;
+  margin-bottom: 1em;
 }
+
+.weatherBanner h3,
+table.weatherBannerTable {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: black;
+}
+
+.weatherBanner h3 {
+  text-decoration: underline;
+}
+
+.weatherBannerTable tr td:nth-child(1) {
+  text-align: right;
+  padding-right: 0.1em;
+  vertical-align: text-top;
+  color: black;
+}
+.weatherBannerTable tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 0.1em;
+  color: $colorWhite;
+  font-weight: bolder;
+} // END OF .weatherBannerTable
+
+.fiveDayForecast {
+  display: none;
+}
+
 
 .bookClick {
   position: absolute;
@@ -148,38 +178,6 @@ nav {
 .bookClick:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-.weatherBanner {
-  margin-bottom: 1em;
-}
-
-.weatherBanner h3,
-table.weatherBannerTable {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  color: black;
-}
-
-.weatherBanner h3 {
-  text-decoration: underline;
-}
-
-.weatherBannerTable tr td:nth-child(1) {
-  text-align: right;
-  padding-right: 0.1em;
-  vertical-align: text-top;
-  color: black;
-}
-.weatherBannerTable tr td:nth-child(2) {
-  text-align: left;
-  padding-left: 0.1em;
-  color: $colorWhite;
-  font-weight: bolder;
-} // END OF .weatherBannerTable
-
-.fiveDayForecast {
-  display: none;
 }
 
 /* #endregion */
@@ -241,6 +239,7 @@ table.weatherBannerTable {
   font-family: $fontLogo;
   font-size: 1.5em;
   margin-bottom: 0.1em;
+  color: $color4DBlue;
 }
 
 .contactInfo #address,
@@ -259,7 +258,7 @@ table.weatherBannerTable {
   justify-content: space-evenly;
   img {
     margin-top: 1em;
-    width: 40px;
+    width: 60px;
   }
 }
 

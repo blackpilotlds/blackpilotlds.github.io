@@ -331,7 +331,7 @@ body {
     text-align: center;
     background-color: #fdc010;
     color: #009688;
-    padding: 3em 0; }
+    padding: 3em 1em; }
     body .headerWords h1,
     body .headerWords h2 {
       margin: 0 0; }
@@ -386,7 +386,32 @@ nav {
   background-color: #09bcd3;
   padding: 0.5em;
   position: relative;
-  padding-left: 30px; }
+  padding-left: 30px;
+  margin-bottom: 1em; }
+
+.weatherBanner h3,
+table.weatherBannerTable {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: black; }
+
+.weatherBanner h3 {
+  text-decoration: underline; }
+
+.weatherBannerTable tr td:nth-child(1) {
+  text-align: right;
+  padding-right: 0.1em;
+  vertical-align: text-top;
+  color: black; }
+
+.weatherBannerTable tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 0.1em;
+  color: #FFF;
+  font-weight: bolder; }
+
+.fiveDayForecast {
+  display: none; }
 
 .bookClick {
   position: absolute;
@@ -426,33 +451,6 @@ nav {
 .bookClick:hover span:after {
   opacity: 1;
   right: 0; }
-
-.weatherBanner {
-  margin-bottom: 1em; }
-
-.weatherBanner h3,
-table.weatherBannerTable {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  color: black; }
-
-.weatherBanner h3 {
-  text-decoration: underline; }
-
-.weatherBannerTable tr td:nth-child(1) {
-  text-align: right;
-  padding-right: 0.1em;
-  vertical-align: text-top;
-  color: black; }
-
-.weatherBannerTable tr td:nth-child(2) {
-  text-align: left;
-  padding-left: 0.1em;
-  color: #FFF;
-  font-weight: bolder; }
-
-.fiveDayForecast {
-  display: none; }
 
 /* #endregion */
 /* #region  LAZY LOAD */
@@ -499,7 +497,8 @@ table.weatherBannerTable {
 .contactInfo h3 {
   font-family: "Permanent Marker", cursive;
   font-size: 1.5em;
-  margin-bottom: 0.1em; }
+  margin-bottom: 0.1em;
+  color: #009688; }
 
 .contactInfo #address,
 #phone {
@@ -514,7 +513,7 @@ table.weatherBannerTable {
   justify-content: space-evenly; }
   .socialMedia img {
     margin-top: 1em;
-    width: 40px; }
+    width: 60px; }
 
 /* #endregion */
 /* #region  FOOTER */
@@ -534,8 +533,7 @@ footer {
 
   .weatherBanner {
     margin: 0 auto;
-    top: 0;
-    right: 0; }
+    padding-left: 60px; }
 
   .fiveDayForecast {
     margin: 0 auto;
@@ -548,7 +546,7 @@ footer {
   .fiveDayForecastFlex {
     display: flex;
     flex-flow: row wrap;
-    border-right: 1px solid #fff;
+    border-right: 1px solid #009688;
     font-size: 1.1rem; }
 
   .fiveDayForecastFlex-col {
@@ -563,7 +561,7 @@ footer {
 
   .fiveDayForecastFlex-head {
     display: block;
-    padding: 5px;
+    padding: 1em 1em;
     border-bottom: 1px solid #009688;
     text-align: center;
     font-weight: 700;
@@ -572,10 +570,13 @@ footer {
 
   .bookClick {
     border-radius: 5px;
-    width: 250px; }
+    width: 400px; }
 
   .mainDivContainerGalleryGrid {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  .contactInfo h3 {
+    font-size: 2.5em; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   main {
@@ -595,6 +596,9 @@ footer {
           width: 200px;
           padding: 2em 1em 1em 3em;
           justify-self: left; }
+
+  .headerWords {
+    margin-bottom: 1em; }
 
   nav {
     display: grid;
@@ -626,6 +630,23 @@ footer {
   .navigation .active {
     color: red;
     background-color: transparent; }
+
+  .weatherBanner {
+    padding-left: 0em;
+    padding-right: 0em;
+    max-width: 920px; }
+    .weatherBanner table, .weatherBanner h3 {
+      padding-left: 50px; }
+
+  .bookClick {
+    border-radius: 5px;
+    width: 500px;
+    padding-right: 0em; }
+
+  .fiveDayForecast {
+    margin: 0 auto;
+    max-width: 920px;
+    margin-bottom: 1em; }
 
   .mainDivContainerGalleryGrid {
     grid-template-columns: repeat(3, 1fr); } }
