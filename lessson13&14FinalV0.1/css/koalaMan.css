@@ -635,7 +635,7 @@ form label.top input:required:valid {
 iframe {
   margin-top: 1em;
   width: 100%;
-  height: auto;
+  height: 300px;
   border: 1px solid black; }
 
 @media only screen and (min-width: 560px) {
