@@ -410,3 +410,10 @@ form label.top input:required:valid {
 }
 
 /* #endregion */
+
+iframe {
+  margin-top: 1em;
+  width:100%;
+  height:auto;
+  border: 1px solid black;
+}
