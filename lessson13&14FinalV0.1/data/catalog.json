@@ -1,0 +1,112 @@
+{
+    "catalog": [
+        {
+            "rentalTypeNumber": 1,
+            "rentalType": "Honda Metro Scooter",
+            "numberPersons": "one",
+            "reservation": [
+                {
+                    "half": "$20",
+                    "full": "$30"
+                }
+            ],
+            "walkIn": [
+                {
+                    "half": "$25",
+                    "full": "$35"
+                }
+            ],
+            "imgURL": "./images/6loc6vehicles/smallView/07_S_Honda_Metropolitan.jpg"
+        },
+        {
+            "rentalTypeNumber": 2,
+            "rentalType": "Honda Dio Scooter",
+            "numberPersons": "two",
+            "reservation": [
+                {
+                    "half": "$30",
+                    "full": "$40"
+                }
+            ],
+            "walkIn": [
+                {
+                    "half": "$35",
+                    "full": "$45"
+                }
+            ],
+            "imgURL": "./images/6loc6vehicles/smallView/08_S_Honda_Dio.jpg"
+        },
+        {
+            "rentalTypeNumber": 3,
+            "rentalType": "Honda PCX150 Scooter",
+            "numberPersons": "two",
+            "reservation": [
+                {
+                    "half": "$40",
+                    "full": "$50"
+                }
+            ],
+            "walkIn": [
+                {
+                    "half": "$45",
+                    "full": "$55"
+                }
+            ],
+            "imgURL": "./images/6loc6vehicles/smallView/09_S_Honda_PCX150.jpg"
+        },
+        {
+            "rentalTypeNumber": 4,
+            "rentalType": "Honda Pioneer ATV",
+            "numberPersons": "four",
+            "reservation": [
+                {
+                    "half": "$50",
+                    "full": "$70"
+                }
+            ],
+            "walkIn": [
+                {
+                    "half": "$60",
+                    "full": "$80"
+                }
+            ],
+            "imgURL": "./images/6loc6vehicles/smallView/10_S_Honda_Pioneer.jpg"
+        },
+        {
+            "rentalTypeNumber": 5,
+            "rentalType": "Jeep Wrangler - 4 door with a/c",
+            "numberPersons": "five",
+            "reservation": [
+                {
+                    "half": "$70",
+                    "full": "$100"
+                }
+            ],
+            "walkIn": [
+                {
+                    "half": "$85",
+                    "full": "$125"
+                }
+            ],
+            "imgURL": "./images/6loc6vehicles/smallView/11_S_Jeep_4.jpg"
+        },
+        {
+            "rentalTypeNumber": 6,
+            "rentalType": "Jeep Wrangler - 2 door",
+            "numberPersons": "four",
+            "reservation": [
+                {
+                    "half": "$60",
+                    "full": "$85"
+                }
+            ],
+            "walkIn": [
+                {
+                    "half": "$70",
+                    "full": "$90"
+                }
+            ],
+            "imgURL": "./images/6loc6vehicles/smallView/12_S_Jeep_2.jpg"
+        }
+    ]
+}

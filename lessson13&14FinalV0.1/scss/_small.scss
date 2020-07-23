@@ -60,15 +60,15 @@ nav {
   padding: 0em;
   margin-top: 0em;
   margin-bottom: 0em;
-  
+
   li:first-child {
     display: block;
   }
-  
+
   li {
     display: none;
   }
-  
+
   a {
     display: block;
     padding: 0.75rem;
@@ -76,12 +76,12 @@ nav {
     text-decoration: none;
     color: $colorWhite;
   }
-  
+
   a:hover {
     color: $colorBlack;
     background-color: $colorWhite;
   }
-  
+
   .active {
     background-color: $color1Yellow;
     color: $colorBlack;
@@ -134,7 +134,6 @@ table.weatherBannerTable {
 .fiveDayForecast {
   display: none;
 }
-
 
 .bookClick {
   position: absolute;
@@ -277,6 +276,60 @@ footer {
   a {
     color: black;
     font-style: italic;
+  }
+}
+
+/* #endregion */
+
+/* #region  CATALOG */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-gap: 10px;
+  box-shadow: 0 0 20px;
+  padding: 1em 1em;
+  background-color: lightgray;
+  
+  section {
+    background-color: $color5LBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border: 2px solid $color4DBlue;
+    padding: 2em 1em;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  p:nth-of-type(1) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p:nth-of-type(2) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p:nth-of-type(3) {
+    margin-top: 0;
+  }
+
+  section img {
+    max-width: 100%;
+    box-shadow: 0 0 20px;
   }
 }
 

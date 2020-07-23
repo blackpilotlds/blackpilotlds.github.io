@@ -66,3 +66,19 @@ main {
 .contactInfo h3 {
   font-size: 2.5em;
 }
+
+.cards {
+  grid-template-columns: repeat(2, 1fr);
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+}

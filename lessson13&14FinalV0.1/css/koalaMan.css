@@ -529,6 +529,43 @@ footer {
     font-style: italic; }
 
 /* #endregion */
+/* #region  CATALOG */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-gap: 10px;
+  box-shadow: 0 0 20px;
+  padding: 1em 1em;
+  background-color: lightgray; }
+  .cards section {
+    background-color: #09bcd3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border: 2px solid #009688;
+    padding: 2em 1em; }
+  .cards h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    font-size: 1.5em; }
+  .cards p {
+    font-size: 0.9em; }
+  .cards p:nth-of-type(1) {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .cards p:nth-of-type(2) {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .cards p:nth-of-type(3) {
+    margin-top: 0; }
+  .cards section img {
+    max-width: 100%;
+    box-shadow: 0 0 20px; }
+
+/* #endregion */
 @media only screen and (min-width: 560px) {
   main {
     max-width: 560px;
@@ -585,7 +622,16 @@ footer {
     grid-template-columns: repeat(2, 1fr); }
 
   .contactInfo h3 {
-    font-size: 2.5em; } }
+    font-size: 2.5em; }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr); }
+    .cards h1 {
+      font-size: 3em; }
+    .cards h2 {
+      font-size: 2em; }
+    .cards p {
+      font-size: 1em; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   main {
@@ -660,5 +706,8 @@ footer {
     margin-bottom: 1em; }
 
   .mainDivContainerGalleryGrid {
+    grid-template-columns: repeat(3, 1fr); }
+
+  .cards {
     grid-template-columns: repeat(3, 1fr); } }
 /* end of media query */
