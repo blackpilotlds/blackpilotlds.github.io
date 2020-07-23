@@ -20,7 +20,7 @@ fetch(requestURL)
                 reservation.textContent = 'Reservation Price : Half Day ' + catalog[i].reservation[0].half + '/ Full Day ' + catalog[i].reservation[0].full;
                 reservationWalkin.textContent = 'Walk-In Price : Half Day ' + catalog[i].walkIn[0].half + '/ Full Day ' + catalog[i].walkIn[0].full;
                 image.setAttribute('src', catalog[i].imgURL);
-                image.setAttribute('alt', catalog[i].name + ' ' + catalog[i].lastname + ' - ' + catalog[i].order);
+                image.setAttribute('alt', catalog[i].rentalType);
 
                     card.appendChild(h4);
                     card.appendChild(nPerson);
