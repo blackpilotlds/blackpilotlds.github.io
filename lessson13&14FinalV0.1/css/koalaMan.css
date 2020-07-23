@@ -613,7 +613,7 @@ form label.sbs {
 form input.submitBtn {
   border: none;
   background-color: #09bcd3;
-  color: white;
+  color: black;
   border-radius: 1em;
   padding: 0.75em 1.5em;
   margin: 0 0 2em 2%;
